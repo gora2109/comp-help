@@ -1,0 +1,33 @@
+/*back-to*/
+.back-to
+  &.top
+    bottom: 32px
+    right: 32px
+    position: fixed
+    display: none
+    opacity: 0
+    z-index: 100
+
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 72px
+    height: 72px
+    padding: 0
+    svg,
+    .icon
+      width: 40px
+      height: 40px
+  @include mediaMaxWidthDesktop
+    &__btn
+      width: 40px
+      height: 40px
+      svg,
+      .icon
+        width: 24px
+        height: 24px
+  @include mediaMaxWidthTabMobile
+    &.top
+      right: 0
+/*back-to*/

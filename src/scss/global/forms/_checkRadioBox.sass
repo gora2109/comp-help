@@ -1,0 +1,83 @@
+$checkRadioBoxBorderColor: $colorPrimaryLight
+$checkRadioBoxBorderCheckedColor: $colorSecondary
+
+$checkRadioBoxBorderColorDisabled: $colorTertiaryLight
+$checkRadioBoxTextColorDisabled: $colorPrimaryLight
+
+$checkRadioBoxWidth: 16px
+$checkRadioBoxHeight: $checkRadioBoxWidth
+$checkRadioBoxBorderSize: 2
+$checkRadioBoxBorderWidth: #{$checkRadioBoxBorderSize}px
+// Стиизация чекбоксов и радиокнопок
+.custom-check
+  display: block
+  position: relative
+  .custom-check__input
+    position: absolute
+    opacity: 0
+    // Стиизация чекбоксов и радиокнопок ( Активное состояние )
+    &:checked ~ .custom-check__text
+      &:before
+        opacity: 1
+    &:checked ~ .custom-check__text
+      &:after
+        border-color: $checkRadioBoxBorderCheckedColor
+    // Стиизация чекбоксов и радиокнопок ( Заблокированное состояние )
+    &:disabled ~ .custom-check__text
+      color: $checkRadioBoxTextColorDisabled
+      &:after
+        border-color: $checkRadioBoxBorderColorDisabled
+      &:hover
+        &:after
+          border-color: $checkRadioBoxBorderColorDisabled
+  // Стиизация чекбоксов и радиокнопок ( Текст )
+  .custom-check__text
+    position: relative
+    padding-left: $checkRadioBoxWidth*2
+    display: block
+    cursor: pointer
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: calc(($mainLineHeight - $checkRadioBoxWidth)/($checkRadioBoxBorderSize*2))
+      @include transition
+    &:before
+      opacity: 0
+    &:after
+      width: $checkRadioBoxWidth
+      height: $checkRadioBoxHeight
+      border-radius: 3px
+      border: $checkRadioBoxBorderWidth solid $checkRadioBoxBorderColor
+    &:hover
+      &:after
+        border-color: $checkRadioBoxBorderCheckedColor
+
+  // Стилизация чекбоксов
+  input[type='checkbox']
+    & ~ .custom-check__text
+      &:before
+        content: "\2713"
+        background: $checkRadioBoxBorderCheckedColor
+        color: $colorTertiary
+        width: $checkRadioBoxWidth
+        height: $checkRadioBoxHeight
+        top: calc((($mainLineHeight - $checkRadioBoxWidth)/($checkRadioBoxBorderSize*2) + $checkRadioBoxBorderWidth))
+        left: $checkRadioBoxBorderWidth
+        display: flex
+        justify-content: center
+        align-items: center
+  // Стилизация радио-кнопок
+  input[type='radio']
+    & ~ .custom-check__text
+      &:before,
+      &:after
+        border-radius: 50%
+      &:before
+        width: calc((($checkRadioBoxWidth/2) + $checkRadioBoxBorderWidth))
+        height: calc((($checkRadioBoxWidth/2) + $checkRadioBoxBorderWidth))
+        background: $checkRadioBoxBorderCheckedColor
+        opacity: 0
+        top: calc(($mainLineHeight - calc((($checkRadioBoxWidth/2) + $checkRadioBoxBorderWidth)))/2)
+        left: calc(($checkRadioBoxWidth/2 + $checkRadioBoxBorderWidth)/2)

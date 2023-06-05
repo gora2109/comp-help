@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+<title>Базовый маркап</title>
+<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=0">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="css/libs.min.css"/><!-- library styles -->
+<link rel="stylesheet" href="css/main.css"/><!-- custom styles -->
+<link href="images/favicon.webp" rel="shortcut icon" type="image/x-icon" /><!-- favicon -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap" rel="stylesheet">  <!-- custom fonts -->
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <header id="header" class="header-sticky header">
+    <div class="header-container header-sticky__inner">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html" class="logo__link">
+                    <img src="images/logo.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span class="nav-toggle__link"></span>
+                <span class="nav-toggle__link"></span>
+                <span class="nav-toggle__link"></span>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile__block">
+                    <div class="header-mobile__container">
+                        <div class="nav-toggle">
+                            <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9999 18.8997L9.39322 8.29297L7.979 9.70718L18.5857 20.3139L7.97916 30.9204L9.39337 32.3346L19.9999 21.7281L30.6064 32.3346L32.0206 30.9204L21.4141 20.3139L32.0208 9.70721L30.6066 8.29299L19.9999 18.8997Z"/>
+                            </svg>
+                        </div>
+                        <div class="header-mobile__rows">
+                            <div class="header-nav">
+                                <div class="header-nav__container">
+                                    <div class="header-nav__menu">
+                                        <nav class="nav">
+                                            <ul class="nav-list nav__list">
+                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
+                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
+                                                <li class="nav__item dropdown">
+                                                    <a class="nav__link" href="#">
+                                                        Пункт меню
+                                                    </a>
+                                                    <i class="dropdown__icon"></i>
+                                                    <ul class="dropdown__list">
+                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
+                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
+                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
+                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-mobile__col">
+
+                                <nav class="soc-menu">
+                                    <ul>
+                                        <li><a href="#">instagram</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="#">twitter</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //container -->
+    </div>
+</header><!-- //site-header -->
+    <main id="main">
+        <section class="section section-top-0">
+<!--            <div class="section__header">-->
+<!--                <div class="container">-->
+<!--                <h1 class="title-text">Слайдеры</h1>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="section__content">
+                <div id="banner-2" class="slider main-banner full-screen banner swiper">
+                    <div class="swiper-wrapper slider-container">
+                        <div class="swiper-slide slider-item slider-item__img">
+                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                        </div><!-- //item -->
+                        <div class="swiper-slide slider-item slider-item__img">
+                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                        </div><!-- //item -->
+                    </div>
+                    <div class="slider-nav__container">
+                        <div class="slider-nav">
+                            <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                </svg>
+                            </div>
+                            <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="slider-pagination swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <h2>Баннер</h2>
+                    <div id="banner-1" class="slider main-banner banner swiper">
+                        <div class="swiper-wrapper slider-container">
+                            <div class="swiper-slide slider-item slider-item__img">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item slider-item__img">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                        </div>
+                        <div class="slider-nav__container">
+                            <div class="slider-nav">
+                                <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                    </svg>
+                                </div>
+                                <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slider-pagination swiper-pagination"></div>
+                        </div>
+
+                    </div>
+
+                    <h2>Карусель</h2>
+                    <div id="carousel-1" class="slider slider-carousel swiper" data-carousel-slide="5">
+                        <div class="swiper-wrapper slider-container">
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                        </div>
+                        <div class="slider-nav__container">
+                            <div class="slider-nav">
+                                <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                    </svg>
+                                </div>
+                                <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slider-pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h2>Карусель галерея</h2>
+                    <div id="carousel-2" class="slider slider-carousel swiper">
+                        <div class="swiper-wrapper slider-container">
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                            <div class="swiper-slide slider-item" data-fancybox="gallery-a" data-srcset="images/content/slider-img.jpg">
+                                <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                            </div><!-- //item -->
+                        </div>
+                        <div class="slider-nav__container">
+                            <div class="slider-nav">
+                                <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                    </svg>
+                                </div>
+                                <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slider-pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <h2>Карусель табы</h2>
+                    <div id="slider-tabs-1" class="tabs slider-tabs tabs-header__slider">
+                        <div class="tabs-header slider-tabs__header">
+                            <div class="tabs-header__item slider-tabs-header__item slider-tabs__header_item active" data-tabs="tabs-slide-1" data-tabs-slide="carousel-3">
+                                <span class="tabs-header__text">Шапка таба 1</span>
+                            </div><!-- //item -->
+                            <div class="tabs-header__item slider-tabs-header__item slider-tabs__header_item" data-tabs="tabs-slide-2" data-tabs-slide="carousel-4">
+                                <span class="tabs-header__text">Шапка таба 2</span>
+                            </div><!-- //item -->
+                            <div class="tabs-header__item slider-tabs-header__item slider-tabs__header_item" data-tabs="tabs-slide-3" data-tabs-slide="carousel-5">
+                                <span class="tabs-header__text">Шапка таба 3</span>
+                            </div><!-- //item -->
+                        </div><!-- //tabs-header -->
+
+                        <div class="tabs-body">
+                            <div id="tabs-slide-1" class="tabs-body__item slider-tabs-body__item active">
+                                <div id="carousel-3" class="slider slider-tab swiper" data-carousel-slide="3">
+                                    <div class="swiper-wrapper slider-container">
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                    </div>
+                                    <div class="slider-nav__container">
+                                        <div class="slider-nav">
+                                            <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div><!-- //tabs-body__item -->
+
+                            <div id="tabs-slide-2" class="tabs-body__item slider-tabs-body__item">
+                                <div id="carousel-4" class="slider slider-tab swiper" data-carousel-slide="6">
+                                    <div class="swiper-wrapper slider-container">
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                    </div>
+                                    <div class="slider-nav__container">
+                                        <div class="slider-nav">
+                                            <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div><!-- //tabs-body__item -->
+
+                            <div id="tabs-slide-3" class="tabs-body__item slider-tabs-body__item">
+                                <div id="carousel-5" class="slider slider-tab swiper" data-carousel-slide="5">
+                                    <div class="swiper-wrapper slider-container">
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                        <div class="swiper-slide slider-item">
+                                            <img src="images/content/slider-img.jpg" alt="slider_item"/>
+                                        </div><!-- //item -->
+                                    </div>
+                                    <div class="slider-nav__container">
+                                        <div class="slider-nav">
+                                            <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9976 4.74399C11.3161 5.06949 11.3161 5.59538 10.9954 5.91866L7.35502 9.59768L7.27097 9.672C6.94949 9.91963 6.49065 9.89384 6.19865 9.59546C6.03938 9.43271 5.95975 9.22125 5.95975 9.00979C5.95975 8.79611 6.03938 8.58354 6.20084 8.42079L9.84011 4.74177L9.92417 4.66771C10.2458 4.42092 10.7056 4.44663 10.9976 4.74399ZM20.2844 11.176C20.6877 11.2272 21 11.5768 21 11.9998C21 12.4582 20.6335 12.8302 20.1818 12.8302H5.79927L10.9953 18.0814L11.0688 18.1662C11.3138 18.4909 11.2895 18.9577 10.9975 19.256C10.6789 19.5804 10.1607 19.5815 9.84109 19.2582L3.24109 12.5877L3.16831 12.5042C3.05758 12.3581 3 12.1798 3 11.9998C3 11.8925 3.02073 11.7851 3.06218 11.6832C3.18873 11.3721 3.48655 11.1695 3.81818 11.1695H20.1818L20.2844 11.176Z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider-pagination swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div><!-- //tabs-body__item -->
+
+                        </div><!-- //tabs-body -->
+                    </div><!-- //tabs -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+    <div class="section__header">
+        <div class="container">
+            <h1 class="title-text">Табы</h1>
+        </div>
+    </div>
+    <div class="section__content">
+        <div class="container">
+            <div id="tabs-section-1" class="tabs tabs-header__slider">
+                <div class="tabs-header slider-tabs__header">
+                    <div class="tabs-header__item slider-tabs__header_item active" data-tabs="tabs-1">
+                        <span class="tabs-header__text">Шапка таба 1</span>
+                    </div><!-- //item -->
+                    <div class="tabs-header__item slider-tabs__header_item" data-tabs="tabs-2">
+                        <span class="tabs-header__text">Шапка таба 2</span>
+                    </div><!-- //item -->
+                    <div class="tabs-header__item slider-tabs__header_item" data-tabs="tabs-3">
+                        <span class="tabs-header__text">Шапка таба 3</span>
+                    </div><!-- //item -->
+                </div><!-- //tabs-header -->
+                <div class="tabs-body">
+                    <div id="tabs-1" class="tabs-body__item active">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                    <div id="tabs-2" class="tabs-body__item">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                    <div id="tabs-3" class="tabs-body__item">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                </div><!-- //tabs-body -->
+            </div><!-- //tabs -->
+            <div id="tabs-section-2" class="tabs tabs-vertical tabs-header__slider">
+                <div class="tabs-header slider-tabs__header">
+                    <div class="tabs-header__item slider-tabs__header_item active" data-tabs="tabs-4">
+                        <span class="tabs-header__text">Шапка таба 1</span>
+                    </div><!-- //item -->
+                    <div class="tabs-header__item slider-tabs__header_item" data-tabs="tabs-5">
+                        <span class="tabs-header__text">Шапка таба 2</span>
+                    </div><!-- //item -->
+                    <div class="tabs-header__item slider-tabs__header_item" data-tabs="tabs-6">
+                        <span class="tabs-header__text">Шапка таба 3</span>
+                    </div><!-- //item -->
+                </div><!-- //tabs-header -->
+
+                <div class="tabs-body">
+                    <div id="tabs-4" class="tabs-body__item active">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                    <div id="tabs-5" class="tabs-body__item">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                    <div id="tabs-6" class="tabs-body__item">
+                        <div class="wysiwyg">
+                            <p>Равным образом рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                            <p>С другой стороны рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+                        </div>
+                    </div><!-- //tabs-body__item -->
+
+                </div><!-- //tabs-body -->
+            </div><!-- //tabs -->
+
+        </div>
+    </div>
+
+</section>
+
+        <section class="section">
+            <div class="section__header">
+                <div class="container">
+                    <h1 class="title-text">Аккордион</h1>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container">
+                    <div class="accordion">
+                        <div class="accordion__list">
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 1</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 1
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 2</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 2
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 3</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 3
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__list">
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 1</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 1
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 2</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 2
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item accordion-item">
+                                <div class="accordion-item__header">
+                                    <span class="title-text">Шапка аккордиона 3</span>
+                                </div>
+                                <div class="accordion-item__body">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            Содержимое аккордиона 3
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="section">
+            <div class="section__header">
+                <div class="container">
+                    <h1 class="title-text">Попапы</h1>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container">
+                   <div class="row">
+                       <div class="col col_4 col_tab-12">
+                           <h2 class="popup-init" data-popupname="location-popup">Вызов кастомного попапа</h2>
+                       </div>
+                       <div class="col col_4 col_tab-12">
+                           <h2 class="popup-init" data-popupname="location-popup-2">Вызов кастомного попапа</h2>
+                       </div>
+
+                       <div class="col col_4 col_tab-12">
+                           <h2 ><a data-fancybox="gallery" href="images/content/slider-img.jpg">Вызов попапа fancybox</a></h2>
+                       </div>
+                   </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <div class="container">
+                    <h1 class="title-text">dropdown</h1>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col_3 col_mob-12">
+                            <div class="dropdown">
+                        <span class="dropdown-btn btn">
+                            Пункт меню
+                        </span>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_mob-12">
+                            <div class="dropdown">
+                        <span class="dropdown-btn btn btn_secondary">
+                            Пункт меню
+                        </span>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_mob-12">
+                            <div class="dropdown">
+                        <span class="dropdown-btn btn btn_tertiary">
+                            Пункт меню
+                        </span>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                    <li class="dropdown-item">Пункт меню</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <div class="container">
+                <h1 class="title-text">Типография</h1>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container">
+                    <h1>Рекомендации по вёрстке экранной текстовой страницы со статьёй, заметкой, книжной главой или текстом
+                        о компании.</h1>
+                    <p>
+                        В отличие от модульной страницы, состоящей из отдельных блоков-атомов, текстовая страница
+                        представляет собой поток для последовательного чтения — например как этот совет. Подобно длинной
+                        молекуле полимера, текстовая страница включает в себя разнообразные элементы в свободном порядке:
+                        подзаголовки, списки, таблицы и иллюстрации.
+                    </p>
+                    <h2>Основной текст</h2>
+                    <p>
+                        Колонка основного текста занимает 60—70% ширины окна. В «резиновой» вёрстке ширина текстовой полосы
+                        уменьшается или увеличивается с изменением размера окна или экрана. Но разрешение экранов постоянно
+                        растёт, поэтому имеет смысл ограничивать максимальную ширину колонки текста, чтобы строки не
+                        становились чрезмерно длинными, а страница — трудной для чтения.
+                    </p>
+                    <p>
+                        Текст в основной колонке имеет длинные строки, и, как правило, выигрывает в читаемости при небольшом
+                        увеличении интерлиньяжа по сравнению со стандартным.
+                    </p>
+                    <p>
+                        Текст, выровненный влево с рваным правым краем, должен «дышать» справа, то есть край формата или
+                        соседняя колонка не должны подходить к нему слишком близко.
+                    </p>
+                    <p>
+                        Текст дробится на абзацы. В экранной вёрстке абзацы обычно отделяют вертикальными отступами. В
+                        канонической швейцарской сетке, привязанной к базовым линиям, отступ между абзацами строго равен
+                        одной строке, поэтому его иногда называют «слепой строкой». На «бесконечной» экранной странице эта
+                        условность не имеет смысла.
+                    </p>
+                    <h2>Подзаголовки</h2>
+
+                    <p>
+                        Основной текст имеет один главный заголовок первого уровня и дробится на части с помощью
+                        подзаголовков.
+                    </p>
+                    <p>
+                        Кегль заголовков второго уровня обычно увеличен по сравнению с основным текстом. Перед такими
+                        заголовками пропускают примерно две строки, после делают отступ, равный обычному абзацному — как у
+                        надписи «Подзаголовки» в этом разделе.
+                    </p>
+                    <h3>Заголовки третьего уровня</h3>
+                    <p>
+                        Заголовки третьего уровня удобно набирать полужирным основного кегля и не отбивать от последующего
+                        текста, как над колонками текста на развороте ниже:
+                    </p>
+                    <p>
+                        Подзаголовок в подбор к основному тексту. Ещё один способ избежать лишних отступов на странице.
+                    </p>
+                    <p>
+                        Подобные «уплотнительные» меры визуально упрощают структуру страницы, помогают избежать путаницы в
+                        уровнях вложенности заголовков и частей текста.
+                    </p>
+                    <p>
+                        Заголовки четвёртого уровня запрещены в любом уважающем себя издании, кроме специализированных
+                        словарей и справочников.
+                    </p>
+                    <p>
+                        Подзаголовки в иерархии могут быть оформлены комбинацией разных стилей: кегля, полужирного
+                        начертания, капители, курсива и выделения цветом. Главные правила — чередование, то есть яркий
+                        контраст стиля заголовков на соседних уровнях вложенности, и чувство меры.
+                    </p>
+
+                    <h2>Списки</h2>
+                    <p>
+                        Список, или перечень,— это предложение с однородными членами, разбитыми для удобства чтения на
+                        отдельные строки, обозначенными графическими маркерами или наборными символами. Поэтому любой список
+                        предваряется обобщающим текстом (общей, неповторяющейся частью предложения) или заголовком в той же
+                        синтаксической роли.
+                    </p>
+                    <h3>
+                        Нумерованные и упорядоченные
+                    </h3>
+                    <p>
+                        Арабскими цифрами с точкой обозначают элементы перечня, если каждый элемент является отдельным
+                        предложением, то есть начинается с прописной буквы и оканчивается точкой. Но даже в этом случае
+                        список представляет собой синтаксическую и смысловую единицу, требующую обобщающего текста или
+                        заголовка.
+                    </p>
+                    <p>
+                        Для успешной работы дизайнеру необходимо:
+                    </p>
+                    <ol>
+                        <li>дистанционное обучение;</li>
+                        <li>
+                            беспощадная система отбора и отсева на всех ступенях;
+                            <ol>
+                                <li>дистанционное обучение,</li>
+                                <li> беспощадная система отбора и отсева на всех ступенях,</li>
+                                <li>бесплатные места для лучших студентов,</li>
+                                <li>гарантия трудоустройства,</li>
+                                <li>чистая радость познания.</li>
+                            </ol>
+                        </li>
+                        <li>бесплатные места для лучших студентов;</li>
+                        <li>гарантия трудоустройства;</li>
+                        <li>чистая радость познания.</li>
+                    </ol>
+                    <h3>Ненумерованные списки</h3>
+                    <p>
+                        Вместо цифр и букв в ненумерованных списках элементы часто обозначаются графическими маркерами или
+                        символами.
+                    </p>
+                    <p>
+                        Наша фирма предоставляет следующие услуги::
+                    </p>
+                    <ul>
+                        <li>Дизайн.</li>
+                        <li>Бизнес-аналитика:
+                            <ul>
+                                <li>исследование рынка;</li>
+                                <li>написание технического задания.</li>
+                            </ul>
+                        </li>
+                        <li>Программирование.</li>
+                        <li>Интернет-маркетинг.</li>
+                    </ul>
+                    <h2>Таблицы</h2>
+                    <table>
+                        <tr>
+                            <th>
+                                Валюта
+                            </th>
+                            <th>
+                                Покупка
+                            </th>
+                            <th>
+                                Продажа
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                EUR
+                            </td>
+                            <td>
+                                27.55
+                            </td>
+                            <td>
+                                28.15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                USD
+                            </td>
+                            <td>
+                                27.55
+                            </td>
+                            <td>
+                                28.15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                RUB
+                            </td>
+                            <td>
+                                27.55
+                            </td>
+                            <td>
+                                28.15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EUR
+                            </td>
+                            <td>
+                                27.55
+                            </td>
+                            <td>
+                                28.15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                USD
+                            </td>
+                            <td>
+                                27.55
+                            </td>
+                            <td>
+                                28.15
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <h2>Особые элементы текста</h2>
+                    <h3>Ссылки</h3>
+                    <p>
+                        Инструкция: <a href="#">manual.pdf</a> 0,7 МБ
+                    </p>
+                    <p>
+                        Ссылку на адрес электронной почты (mailto) рекомендуется использовать только вместе с адресом,
+                        указанным в явном виде: <a href="#">manager@dzencode.com</a>
+                    </p>
+                    <h3>Псевдоссылки</h3>
+                    <p>
+                        Инструкция :<a href="#" class="sub-link">manual.pdf</a>
+                    </p>
+                    <h3>Надстрочный знак</h3>
+                    <p>
+                        Стоимость: <strong>5399 <sup>грн</sup></strong>
+                    </p>
+                    <h3>Цитаты</h3>
+                    <p>
+                        предназначен для выделения длинных цитат, которые могут состоять из нескольких абзацев. Тег выделяет
+                        цитату как отдельный блок текста с отступами.
+                    </p>
+                    <blockquote>
+                        Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат
+                        и сами всё дадут!
+                        Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат
+                        и сами всё дадут!
+                        Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат
+                        и сами всё дадут!
+                    </blockquote>
+                    <p>
+                        "q" предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически
+                        обрамляется кавычками:
+                    </p>
+                    <q>
+                        предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически
+                        обрамляется кавычками
+                        предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически
+                        обрамляется кавычками
+                        предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически
+                        обрамляется кавычками
+                    </q>
+
+                </div><!-- //content -->
+            </div>
+        </section>
+
+        <section id="video-content" class="section">
+    <div class="container">
+        <div class="section__header">
+            <h1 class="title-text">Видео</h1>
+        </div>
+        <div class="section__content">
+            <div class="row">
+                <div class="col col_12">
+                    <h2>Подключение видео через тэг video</h2>
+                    <div class="video-container margin-bottom-40 margin-mob-bottom-24">
+                        <video id="player-1" class="video-block" playsinline controls>
+                            <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                            <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+
+                <!--<div class="col col_6 col_mob-12">
+                    <h2>Подключение YouTube видео через iframe</h2>
+                    <div class="video-container margin-bottom-40 margin-mob-bottom-24">
+                        <div id="player-4" class="video-block">
+                            <iframe
+                                    src="https://www.youtube.com/embed/F2ANFPMxQJA?controls=0"
+                                    allowfullscreen
+                                    allowtransparency
+                                    allow="autoplay"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col_6 col_mob-12">
+                    <h2>Подключение YouTube видео через id-ключ</h2>
+                    <div class="video-container margin-bottom-40 margin-mob-bottom-24">
+                        <div id="player-3" class="video-block" data-plyr-provider="youtube" data-plyr-embed-id="e-xToC9wNl0"></div>
+                    </div>
+                </div>-->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section id="music" class="section">
+    <div class="container">
+        <div class="section__header">
+            <h1 class="title-text">Музыка</h1>
+        </div>
+        <div id="tracks-1" class="tracks">
+            <div class="track-list">
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-1" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-2" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-3" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-4" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="tracks-2" class="tracks">
+            <div class="track-list">
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-1" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-2" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-3" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-player">
+                        <div class="plur-audio">
+                            <audio id="player-audio-4" class="track-player__audio" controls>
+                                <source src="https://freepd.com/music/Beat%20Thee.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="form" class="section">
+            <div class="section__header">
+                <div class="container">
+                <h1 class="title-text">Елементы формы</h1>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="container">
+
+                    <form action="post" class="form" id="form-1">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input
+                                                    type="text"
+                                                    placeholder="Поле с маской телефона"
+                                                    class="form-input form-control phone_mask"
+                                                    name="tel-1"
+                                                    id="tel-1"
+                                                    required
+                                            />
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input id="tel-2" name="tel-2" type="tel" placeholder="Поле с маской телефона" class="form-input form-control phone_mask" required>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input id="tel-3" class="form-input form-control phone_mask" name="tel-3" type="text" placeholder="Контент" disabled>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input
+                                                    type="text"
+                                                    placeholder="Текстовое поле"
+                                                    class="form-input form-control "
+                                                    name="text-1"
+                                                    id="text-1"
+                                                    required
+                                            />
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input id="email-1" name="email-1" type="email" placeholder="Поле с почтой" class="form-input form-control" required>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input id="password-1" class="form-input form-control" name="password-1" type="password" placeholder="Пароль" required>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Пароль с функцией показать пароль</span>
+                                            <div class="password-input">
+                                                <input id="password-2" class="form-input" name="password-2" type="password" placeholder="Пароль">
+                                                <button type="button" class="btn-icon password-btn"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+                                            </div>
+                                        </label>
+
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-check">
+                                            <input id="check-1" class="custom-check__input form-input form-control" type="checkbox" name="chekbox" required>
+                                            <span class="custom-check__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-check">
+                                            <input id="check-2" class="custom-check__input" type="checkbox" name="chekbox" required
+                                                   checked>
+                                             <span class="custom-check__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-check">
+                                            <input id="check-3" class="custom-check__input" type="checkbox" name="chekbox" required
+                                                   disabled>
+                                            <span class="custom-check__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+                                            <input type="number" name="input-number" min="1" max="9999" value="1" step="1">
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+                                            <input type="number" name="input-number" min="1" max="9999" value="1" step="1">
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <span class="form-field__title">Заголовок</span>
+                                        <label class="attach attach_single">
+                                            <img class="attach__preview" src="images/file-preview.svg"/>
+                                            <input id="attach__input-1" type="file" class="attach__input" required>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <input
+                                                    type="file"
+                                                    class="form-input form-control"
+                                                    name="file-1"
+                                                    id="file-1"
+                                                    required
+                                            />
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+
+
+                                <div class="col col_12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <textarea name="" placeholder="Контент"></textarea>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6">
+                                    <button type="submit" class="btn">Отправить</button>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form action="post" class="form" id="form-2">
+                        <fieldset>
+                            <div class="row">
+                                <!--select-->
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+                                            <select id="select-1" class="form-input wide" required >
+                                                <option value="v1" >Контент-1</option>
+                                                <option value="v2">Контент-2</option>
+                                                <option value="v3">Контент-3</option>
+                                            </select>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <select id="select-2" class="form-input wide" >
+                                                <option value="v1" selected>Контент-1</option>
+                                                <option value="v2">Контент-2</option>
+                                                <option value="v3">Контент-3</option>
+                                            </select>
+                                        </label>
+
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <select id="select-3" class="form-input wide" disabled required>
+                                                <option value="v1">Контент-1</option>
+                                                <option value="v2">Контент-2</option>
+                                                <option value="v3">Контент-3</option>
+                                            </select>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <!--select-->
+                                <!--toggle-->
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-toggle">
+                                            <input id="toggle-1" class="custom-toggle__input form-input form-control" type="checkbox" name="chekbox" required>
+                                            <span class="custom-toggle__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-toggle">
+                                            <input id="toggle-2" class="custom-toggle__input form-input form-control" type="checkbox" name="chekbox" checked required>
+                                            <span class="custom-toggle__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Заголовок</span>
+
+                                            <span class="custom-toggle">
+                                            <input id="toggle-3" class="custom-toggle__input form-input form-control" type="checkbox" name="chekbox" required disabled>
+                                            <span class="custom-toggle__text">Пример текста</span>
+                                        </span>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <!--toggle-->
+
+                                <!--form-group-->
+                                <div class="col col_12">
+                                    <div id="radio-group" class="form-group row">
+                                        <div class="col col_4 col_tab-6 col_mob-12">
+                                            <div class="form-field">
+                                                <label class="label-wrap">
+                                                    <span class="form-field__title">Заголовок</span>
+
+                                                    <span class="custom-check">
+                                                        <input id="radio-group-1" class="custom-check__input" type="radio" name="radio-group" checked required>
+                                                        <span class="custom-check__text">Пример текста</span>
+                                                    </span>
+                                                </label>
+                                            </div><!-- //form-field -->
+                                        </div>
+                                        <div class="col col_4 col_tab-6 col_mob-12">
+                                            <div class="form-field">
+                                                <label class="label-wrap">
+                                                    <span class="form-field__title">Заголовок</span>
+
+                                                    <span class="custom-check">
+                                            <input id="radio-group-2" class="custom-check__input" type="radio" name="radio-group" required
+                                            >
+                                            <span class="custom-check__text">Пример текста</span>
+                                        </span>
+                                                </label>
+                                            </div><!-- //form-field -->
+                                        </div>
+                                        <div class="col col_4 col_tab-6 col_mob-12">
+                                            <div class="form-field">
+                                                <label class="label-wrap">
+                                                    <span class="form-field__title">Заголовок</span>
+
+                                                    <span class="custom-check">
+                                            <input id="radio-group-3" class="custom-check__input" type="radio" name="radio-group"
+                                                   disabled>
+                                            <span class="custom-check__text">Пример текста</span>
+                                        </span>
+                                                </label>
+                                            </div><!-- //form-field -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--form-group-->
+                                <!--datepicker-->
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div id="datepicker-inline-1" class="datepicker-inline"></div>
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Календарь поле</span>
+                                            <input id="datepicker-input-1" class="datepicker-input form-input form-control" type="text" name="input-number" autocomplete="off" readonly>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="datepicker-range__block display-flex">
+                                        <div class="form-field">
+                                            <label class="label-wrap">
+                                                <span class="form-field__title">Календарь поле. Начало даты</span>
+                                                <input id="datepicker-input-min-1" class="datepicker-input form-input form-control datepicker-input__min" type="text" name="input-number" autocomplete="off" required>
+                                            </label>
+                                        </div><!-- //form-field -->
+                                        <div class="form-field">
+                                            <label class="label-wrap">
+                                                <span class="form-field__title">Календарь поле. Конец даты</span>
+                                                <input id="datepicker-input-max-1" class="datepicker-input form-input form-control datepicker-input__max" type="text" name="input-number" autocomplete="off" required>
+                                            </label>
+                                        </div><!-- //form-field -->
+                                    </div>
+                                </div>
+
+                                <div class="col col_4 col_tab-6 col_mob-12">
+                                    <div class="form-field">
+                                        <label class="label-wrap">
+                                            <span class="form-field__title">Календарь поле диапазон дат</span>
+                                            <input id="datepicker-input-range-1" class="datepicker-input__range form-input form-control" type="text" name="input-number" autocomplete="off" required>
+                                        </label>
+                                    </div><!-- //form-field -->
+                                </div>
+                                <!--datepicker-->
+
+                                <div class="col col_4 col_tab-6">
+                                    <button type="submit" class="btn">Отправить</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div><!-- //content -->
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn">Первичная кнопка</button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn_secondary">Вторичная кнопка</button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn_tertiary">Третичная кнопка</button>
+                    </div>
+
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn btn-group btn-icon-position__right btn-icon">
+                            <span class="btn-text">Первичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn_secondary btn-group btn-icon-position__right btn-icon">
+                            <span class="btn-text">Вторичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn_tertiary btn-group btn-icon-position__right btn-icon">
+                            <span class="btn-text">Третичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn btn-group btn-icon-position__right btn-icon" disabled>
+                            <span class="btn-text">Первичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn btn_secondary btn-group btn-icon-position__right btn-icon" disabled>
+                            <span class="btn-text">Вторичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col col_4 col_tab-6">
+                        <button type="submit" class="btn btn_tertiary btn-group btn-icon-position__right btn-icon" disabled>
+                            <span class="btn-text">Третичная кнопка</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0024 4.74399C12.6839 5.06949 12.6839 5.59538 13.0046 5.91866L16.645 9.59768L16.729 9.672C17.0505 9.91963 17.5093 9.89384 17.8013 9.59546C17.9606 9.43271 18.0403 9.22125 18.0403 9.00979C18.0403 8.79611 17.9606 8.58354 17.7992 8.42079L14.1599 4.74177L14.0758 4.66771C13.7542 4.42092 13.2944 4.44663 13.0024 4.74399ZM3.7156 11.176C3.31232 11.2272 3 11.5768 3 11.9998C3 12.4582 3.36655 12.8302 3.81818 12.8302H18.2007L13.0047 18.0814L12.9312 18.1662C12.6862 18.4909 12.7105 18.9577 13.0025 19.256C13.3211 19.5804 13.8393 19.5815 14.1589 19.2582L20.7589 12.5877L20.8317 12.5042C20.9424 12.3581 21 12.1798 21 11.9998C21 11.8925 20.9793 11.7851 20.9378 11.6832C20.8113 11.3721 20.5135 11.1695 20.1818 11.1695H3.81818L3.7156 11.176Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+    <div class="section__header">
+        <div class="container">
+            <h1 class="title-text">Google maps</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="h2">Google maps координаты по адресу</h2>
+        <div id="map-1" class="map-container" data-address='New York'></div>
+        <h2 class="h2">Google maps координаты по координатам</h2>
+        <div id="map-2" class="map-container" data-map-lat="41.881832" data-map-lng="-87.623177"></div>
+        <h2 class="h2">Google maps координаты по координатам. Блок с фильтром типов здании.</h2>
+        <h4 class="h4">Подробнее с типом заданий смотри в <a href="https://developers.google.com/maps/documentation/places/web-service/supported_types" target="_blank">тут</a></h4>
+        <div id="map-place-1" class="map-place__container">
+            <div class="row ">
+                <div class="col col_9 col_mob-12">
+                    <div id="map-3" class="map-place__map map-container" data-map-lat="41.881832" data-map-lng="-87.623177"></div>
+                </div>
+
+                <div class="col col_3 col_mob-12">
+                    <div id="plase-list-1" class="map-place__filter">
+                        <ul>
+                            <li><a href="#" data-markers="restaurant">Restaurants</a></li>
+                            <li><a href="#" data-markers="school">Schools</a></li>
+                            <li><a href="#" data-markers="park">Parks</a></li>
+                            <li class="active"><a href="#" data-markers="food">Food</a></li>
+                            <li><a href="#" data-markers="stadium">Sport</a></li>
+                            <li><a href="#" data-markers="gym">Fitness</a></li>
+                            <li><a href="#" data-markers="room">Room</a></li>
+                            <li><a href="#" data-markers="bar">Bar</a></li>
+                            <li><a href="#" data-markers="bank">Bank</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="map-place-2" class="map-place__container">
+            <div class="row ">
+                <div class="col col_9 col_mob-12">
+                    <div id="map-5" class="map-place__map map-container" data-map-lat="41.881832" data-map-lng="-87.623177"></div>
+                </div>
+
+                <div class="col col_3 col_mob-12">
+                    <div id="plase-list-2" class="map-place__filter">
+
+                        <ul>
+                            <li><a href="#" data-markers="restaurant">Restaurants</a></li>
+                            <li><a href="#" data-markers="school">Schools</a></li>
+                            <li><a href="#" data-markers="park">Parks</a></li>
+                            <li class="active"><a href="#" data-markers="food">Food</a></li>
+                            <li><a href="#" data-markers="stadium">Sport</a></li>
+                            <li><a href="#" data-markers="gym">Fitness</a></li>
+                            <li><a href="#" data-markers="room">Room</a></li>
+                            <li><a href="#" data-markers="bar">Bar</a></li>
+                            <li><a href="#" data-markers="bank">Bank</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="map-search-1" class="map-search__container">
+            <input id="map-search__input-1" type="text" class="map-search__input">
+            <div id="map-4" class="map-search__map map-container" data-map-lat="41.881832" data-map-lng="-87.623177"></div>
+        </div>
+        <div id="map-search-2" class="map-search__container">
+            <input id="map-search__input-2" type="text" class="map-search__input">
+            <div id="map-6" class="map-search__map map-container" data-address='New York'></div>
+        </div>
+        <h2 class="h2">Marker Clusterer</h2>
+        <div id="map-7" class="map-container map-markerclusterer" data-map-lat="-28.024" data-map-lng="140.887"></div>
+    </div>
+</section>
+        <section class="section">
+    <div class="container">
+        <h2 class="h2">Графики</h2>
+
+        <h3 class="h3">График линии</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-1" class="chart-canvas__container" data-chart-type="line" data-chart-coordinates="js/json/chartData.json"></canvas>
+        </div>
+        <h3 class="h3">График полосы</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-2" class="chart-canvas__container" data-chart-type="bar" data-chart-coordinates="js/json/chartData.json"></canvas>
+        </div>
+
+        <h3 class="h3">График полярная область</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-3" class="chart-canvas__container" data-chart-type="polarArea" data-chart-coordinates="js/json/chartPolarArea.json"></canvas>
+        </div>
+
+        <h3 class="h3">График пончик</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-4" class="chart-canvas__container" data-chart-type="doughnut" data-chart-coordinates="js/json/chartPolarArea.json"></canvas>
+        </div>
+
+        <h3 class="h3">График пирог</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-5" class="chart-canvas__container" data-chart-type="pie" data-chart-coordinates="js/json/chartPolarArea.json"></canvas>
+
+        <h3 class="h3">График паутинка</h3>
+        <div class="chart-canvas">
+            <canvas id="canvas__Chart-6" class="chart-canvas__container" data-chart-type="radar" data-chart-coordinates="js/json/chartData2.json"></canvas>
+        </div>
+    </div>
+</section>
+
+    </main><!-- //middle -->
+    <footer id="footer" class="site-footer">
+    <div class="container">
+
+    </div><!-- //container -->
+</footer><!-- //footer -->
+    <div class="back-to top">
+    <button class="btn back-to__btn">
+        <svg class="icon" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0001 6.66145L26.2475 12.6585L27.7527 11.3415L20.7527 3.3415C20.5628 3.12448 20.2885 3 20.0001 3C19.7117 3 19.4374 3.12448 19.2475 3.3415L12.2475 11.3415L13.7527 12.6585L19.0001 6.66145L19.0001 36L21.0001 36L21.0001 6.66145Z" fill-opacity="0.6"/>
+        </svg>
+    </button>
+</div>
+    <div class="popup-wrap">
+        <div class="popup location-popup">
+    <div class="popup-header">
+        <div class="popup-header__title">
+            <h2 class="h3">Текстовый заголовок</h2>
+        </div>
+        <button type="button" class="btn btn_secondary icon-block btn-icon popup-remove">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1265 18.1872C17.4194 18.4801 17.8943 18.4801 18.1872 18.1872C18.4801 17.8943 18.4801 17.4194 18.1872 17.1265L13.0607 12L18.1872 6.87347C18.4801 6.58058 18.4801 6.10571 18.1872 5.81281C17.8943 5.51992 17.4194 5.51992 17.1265 5.81281L12 10.9393L6.87347 5.81281C6.58058 5.51992 6.10571 5.51992 5.81281 5.81281C5.51992 6.1057 5.51992 6.58058 5.81281 6.87347L10.9393 12L5.81281 17.1265C5.51992 17.4194 5.51992 17.8943 5.81281 18.1872C6.10571 18.4801 6.58058 18.4801 6.87347 18.1872L12 13.0607L17.1265 18.1872Z"/>
+            </svg>
+        </button>
+    </div><!-- //popup-header -->
+    <div class="popup-content">
+        <div class="wysiwyg">
+            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
+            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
+            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+
+            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
+            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
+            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+        </div>
+    </div>
+    <div class="popup-footer">
+        <button type="button" class="btn btn_secondary popup-remove margin-left-auto">
+            закрыть
+        </button>
+    </div>
+</div>
+        <div class="popup location-popup-2">
+    <div class="popup-header">
+        <div class="popup-header__title">
+            <h2 class="h3">Текстовый заголовок</h2>
+        </div>
+        <button type="button" class="btn btn_secondary icon-block btn-icon popup-remove">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1265 18.1872C17.4194 18.4801 17.8943 18.4801 18.1872 18.1872C18.4801 17.8943 18.4801 17.4194 18.1872 17.1265L13.0607 12L18.1872 6.87347C18.4801 6.58058 18.4801 6.10571 18.1872 5.81281C17.8943 5.51992 17.4194 5.51992 17.1265 5.81281L12 10.9393L6.87347 5.81281C6.58058 5.51992 6.10571 5.51992 5.81281 5.81281C5.51992 6.1057 5.51992 6.58058 5.81281 6.87347L10.9393 12L5.81281 17.1265C5.51992 17.4194 5.51992 17.8943 5.81281 18.1872C6.10571 18.4801 6.58058 18.4801 6.87347 18.1872L12 13.0607L17.1265 18.1872Z"/>
+            </svg>
+        </button>
+    </div><!-- //popup-header -->
+    <div class="popup-content">
+        <div class="wysiwyg">
+            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
+            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
+            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+
+            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
+            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
+            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+        </div>
+    </div>
+    <div class="popup-footer">
+        <button type="button" class="btn btn_secondary popup-remove margin-left-auto">
+            закрыть
+        </button>
+    </div>
+</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><!-- jQuery -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTpOY6MRXwiBtAIoQbhvaLJzqK1y0bmDM&libraries=places&region=GB&language=en"></script><!--google map connection-->
+<script src="js/libs.min.js"></script><!-- скрипты библиотек -->
+<script src="js/modules/modules.js"></script><!-- кастомные скрипты -->
+<script src="js/main.js"></script><!-- кастомные скрипты -->
+</div><!-- //wrapper -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+$slider-nav-color: $colorTertiaryLight
+$slider-nav-color-active: $colorSecondaryLight
+.slider
+  width: 100%
+  &-container
+  &-item
+    &__img
+      img
+        width: 100%
+  &.full-screen
+    height: 100vh
+    .slider
+      &-item
+        &__img
+          img
+            height: 100%
+  &-nav
+    &__container
+    &-btn
+      width: 32px
+      height: 32px
+      top: calc(50% - 16px)
+      margin-top: 0
+      .icon
+        width: 32px
+        height: 32px
+        fill: $slider-nav-color
+        @include transition
+      &:after
+        display: none
+      &:hover
+        .icon
+          fill: $slider-nav-color-active
+      &-next
+        right: 32px
+      &-prev
+        left: 32px

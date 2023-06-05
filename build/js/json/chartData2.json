@@ -1,0 +1,78 @@
+[
+  {
+    "label": "Red",
+    "data": [
+      {
+        "data": 11
+      },{
+        "data": 16
+      },{
+        "data": 7
+      },{
+        "data": 3
+      },{
+        "data": 14
+      }
+    ]
+  },{
+  "label": "Green",
+  "data": [
+    {
+      "data": 7
+    },{
+      "data": 3
+    },{
+      "data": 14
+    },{
+      "data": 11
+    },{
+      "data": 16
+    }
+  ]
+},{
+  "label": "Yellow",
+  "data": [
+    {
+      "data": 14
+    },{
+      "data": 11
+    },{
+      "data": 16
+    },{
+      "data": 7
+    },{
+      "data": 3
+    }
+  ]
+},{
+  "label": "Grey",
+  "data": [
+    {
+      "data": 3
+    },{
+      "data": 14
+    },{
+      "data": 11
+    },{
+      "data": 16
+    },{
+      "data": 7
+    }
+  ]
+},{
+  "label": "Blue",
+  "data": [
+    {
+      "data": 16
+    },{
+      "data": 7
+    },{
+      "data": 3
+    },{
+      "data": 14
+    },{
+      "data": 11
+    }
+  ]
+}
+]
