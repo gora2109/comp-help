@@ -1,21 +1,21 @@
-// Стилизация формы
-$inputSize: $mainFontSize
-$inputLineHeight: $mainLineHeight + 4px
-$inputPadding: 8px 16px
+// Form style
+$inputSize: $mainFontSize - 4
+$inputLineHeight: $mainLineHeight + 3
+$inputPadding: 13px 19px
 $inputFontFamily: $mainFont
-$inputFontWeight: 500
-$inputBorderRadius: 0
-$inputPlaceholder: $colorPrimary
-$inputTextColor: $colorPrimaryDark
+$inputFontWeight: $mainFontWeigth
+$inputBorderRadius: 20px
+$inputPlaceholder: #A9A49F
+$inputTextColor: $colorPrimary
 
-$inputBorderColor: $colorPrimaryLight
-$inputBackgroundColor: transparent
+$inputBorderColor: $colorTertiary
+$inputBackgroundColor: $colorTertiary
 
-$inputBorderColorHover: $colorPrimary
-$inputBackgroundColorHover: $inputBackgroundColor
+$inputBorderColorHover: $colorTertiary
+$inputBackgroundColorHover: $colorTertiary
 
-$inputBorderColorFocus: $colorPrimaryDark
-$inputBackgroundColorFocus: $colorTertiaryLight
+$inputBorderColorFocus: $colorTertiary
+$inputBackgroundColorFocus: $colorTertiary
 
 $inputBorderColorDisabled: $colorTertiaryLight
 $inputBackgroundColorDisabled: $colorTertiaryLight
@@ -25,20 +25,15 @@ $inputBorderColorError: $colorError
 $inputTextError: $inputSize - 2px
 $inputLineHeightError: $inputLineHeight - 8px
 
-$formFieldMarginBottom: 24px
+$formFieldMarginBottom: 10px
 $formFieldTitleFontSize: $inputSize
 $formFieldTitleLineHeight: $inputLineHeight - 4px
-$formFieldTitleMarginBottom: $formFieldMarginBottom/3
-
+$formFieldTitleMarginBottom: $formFieldMarginBottom
 
 
 @import "_inputs"
 @import "_password"
 @import "_checkRadioBox"
-@import "_toggle"
-@import "_select"
-@import "_number"
-@import "_attach"
 
 @-webkit-keyframes autofill
   to
@@ -51,8 +46,8 @@ input:-webkit-autofill
 ::-webkit-scrollbar
   width: 5px
 ::-webkit-scrollbar-track
-  background: $colorTertiary
+  background: $colorTertiaryLight
 ::-webkit-scrollbar-thumb
   background-color: $colorSecondary
   &:hover
-    background-color: $colorSecondaryLight
+    background-color: $colorPrimaryDark

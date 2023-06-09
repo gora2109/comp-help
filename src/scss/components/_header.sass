@@ -1,262 +1,185 @@
-$headerBackground: $colorTertiary
-$headerContainerPadding: 16px 0
-$headerNavFonts: 20px
-$headerNavLineHeight: 24px
-$headerNavColor: $colorPrimaryDark
-$headerNavColorHover: $colorPrimaryDark
+$headerBackground: $colorPrimary
+$headerContainerPadding: 12px 0
+$headerNavFonts: $mainFontSize + 2px
+$headerNavLineHeight: $mainLineHeight
+$headerNavColor: $colorTertiary
+$headerNavColorHover: $colorSecondary
 
 .header
   position: fixed
   top: 0
   left: 0
-  background-color: $headerBackground
+  background-color: transparent
   padding: $headerContainerPadding
   width: 100% !important
   z-index: 10
+  @include transition
+  &.scroll
+    background-color: $headerBackground
   &-container
     position: relative
-
   .container
     display: flex
     align-items: center
     height: 100%
     justify-content: space-between
-
   &-mobile
+    @include mediaMinWidthDesktop
+      margin-left: auto
+      margin-right: 60px
+      @include hd-desktop
+        margin-right: 30px
     @include mediaMaxWidthDesktop
+      border-top: 1px solid $colorTertiary
       position: fixed
-      left: 100%
+      left: 0
       right: 0
-      top: 0
-      bottom: 0
+      top: 70px
+      bottom: 100%
       overflow: hidden
+      visibility: hidden
+      opacity: 0
       overflow-y: auto
-      //background-color: $black-color-200
-      width: 0
+      width: 100%
       @include transition
-    &__block
       @include mediaMaxWidthDesktop
-        padding: 160px 0
-        width: 100%
-        //background-color: $black-color-1000
-        //color: $white-color-1000
-      @include mediaMaxWidthTabMobile
-        padding: 112px 0
+        top: 80px
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: rgba(253, 208, 59, 0.7)
+        backdrop-filter: blur(20px)
+        z-index: -1
+      &__block
+        background-color: $headerBackground
+  &-info
+    &__container
+      display: flex
+      align-items: center
+      margin: 0 -32px
+      @include mediaMaxWidthDesktop
+        margin: 0 -8px
+    &__block
+      padding: 0 32px
+      @include mediaMaxWidthDesktop
+        padding: 0 8px
+      .btn
+        @include mediaMinWidthTabMobile
+          .fa
+            display: none
+        @include mediaMaxWidthTabMobile
+          padding: 8px 12px
+          border-radius: 50%
+          span
+            display: none
+    @include mediaMaxWidthDesktop
+  &.active
+    .nav-toggle
+      &__link
+        width: 0
+        &:nth-child(1)
+          width: 100%
+          transform: translateY(6px) rotate(45deg)
+        &:nth-child(3)
+          width: 100%
+          transform: translateY(-6px) rotate(-45deg)
+    .header
+      &-mobile
+        bottom: 0
+        visibility: visible
+        opacity: 1
+  &-nav
     &__container
       @include mediaMaxWidthDesktop
-        width: 100%
+        padding: 60px 15px
+        max-width: 95%
         margin: 0 auto
-        max-width: calc(100% - 120px)
-    &__rows
-      @include mediaMaxWidthDesktop
-        @include mediaMinWidthTabMobile
-          display: flex
-          flex-direction: row-reverse
-          & > div
-            width: 50%
-    &__col
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      @include mediaMinWidthDesktop
-        display: none
-    .nav-toggle
-      position: absolute
-      right: 20px
-      top: 16px
-      .icon-svg
-        //fill: $white-color-1000
-        width: 24px
-        height: 24px
-      &:hover
-        .icon-svg
-          //fill: $linkHover
-    .site-logo
       @include mediaMaxWidthTabMobile
-        display: none
-/*soc-menu*/
-.soc-menu
-  ul
-    list-style-type: none
-    margin: 0
-    li
-      margin-bottom: 24px
-      &:last-child
-        margin-bottom: 0
-      a
-        border-bottom: none
-        text-transform: uppercase
-        color: $headerNavColor
-        font-size: 20px
-        line-height: 24px
-        letter-spacing: .02em
-        &:hover
-          color: $headerNavColorHover
-      @include mediaMaxWidthTabMobile
-        text-align: right
-/*soc-menu*/
-
-
-  &.site-header_menu-active
-    .nav
-      right: 0
-    .nav-toggle
-      .nav-toggle__link
-        &:nth-child(2)
-          display: none
-        &:nth-child(1),
-        &:nth-child(3)
-          margin: 0
-          transform: rotate(45deg)
-        &:nth-child(3)
-          margin-top: -2px
-          transform: rotate(-45deg)
+        padding: 30px 15px
+  .logo
+    @include mediaMaxWidthDesktop
+      max-width: 200px
 // Логотип
 .logo
- .logo__link
-   height: 100%
-   display: block
+  .logo__link
+    height: 100%
+    display: block
+    text-decoration: none
+    text-transform: uppercase
+    font-size: $mainFontSize + 14
+    line-height: $mainLineHeight + 17
+    color: $headerNavColor
+    span
+      color: $colorSecondary
+    @include hd-desktop
+      font-size: $mainFontSize + 10
+      line-height: $mainLineHeight + 11
+    @include desktop
+      font-size: $mainFontSize + 6
+      line-height: $mainLineHeight + 7
+
 // Вызов мобильного меню
 .nav-toggle
-  display: none
-  width: 32px
-  height: 40px
+  display: flex
+  width: 24px
+  height: 24px
   flex-direction: column
   justify-content: center
   align-items: center
   z-index: 10
   cursor: pointer
-  @include mediaMaxWidthTablet
+  &__block
     display: flex
-  .nav-toggle__link
+    align-items: center
+  @include mediaMinWidthDesktop
+    display: none
+    &__block
+      display: none
+
+  &__link
     width: 100%
     display: block
-    background: $colorPrimaryDark
+    background: $headerNavColor
     height: 2px
     margin: 2px 0
+    border-radius: 1px
     clear: both
     @include transition
+  &:hover
+    .nav-toggle__link
+      background: $headerNavColorHover
 
-// Навигация
 .header
   .nav
-    @include mediaMaxWidthTablet
-      right: -100%
-      width: 100%
-      background: $colorTertiaryLight
-      top: 100%
-      position: absolute
-      @include transition
     &__list
-      margin: 0 -32px
-      list-style: none
       display: flex
-      @include mediaMaxWidthTablet
+      @include mediaMaxWidthDesktop
         flex-direction: column
-
     &__item
-      margin: 0
-      padding: 0 16px
-      &.active,
-      &:hover
-        .nav__link
-          color: $headerNavColorHover
+      padding: 0 11px
+      margin-bottom: 0
+      @include mediaMaxWidthDesktop
+        padding: 0
+        &:not(:last-child)
+          margin-bottom: 24px
     &__link
-      display: block
-      color: $headerNavColor
-      text-decoration: none
-      text-transform: uppercase
-      font-size: $headerNavFonts
-      line-height: $headerNavLineHeight
-      @include transition
+.menu-open
+  overflow: hidden
 
-// Выпадающий список
-.dropdown
-  position: relative
-  //dropdown hover
-  @include mediaMinWidthTablet
-    &:hover
-      .dropdown__list
-        visibility: visible
-        opacity: 1
-  @include mediaMaxWidthTablet
-    &.dropdown_active
-      .dropdown__list
-        visibility: visible
-        opacity: 1
-        max-height: 9999px
-      .dropdown__icon
-        &:before
-          content: "-"
-          position: relative
-          top: -3px
-      .dropdown__item
-        left: 0
-        opacity: 1
-  // Выпадающий список ( Иконка )
-  .dropdown__icon
-    position: absolute
-    cursor: pointer
-    right: 0
-    top: calc(50% - 2px)
-    z-index: 10
-    background-color: transparent
-    &:before
-      display: block
-      border: 4px solid transparent
-      border-top: 4px solid $colorSecondary
-      content: ""
-      @include transition
-    @include mediaMaxWidthTablet
-      right: 0
-      top: 0
-      height: 40px
-      width: 40px
-      background-color: $colorPrimaryLight
-      display: flex
-      justify-content: center
-      align-items: center
-      &:before
-        color: $colorTertiary
-        border: 0
-        font-weight: 300
-        font-size: 40px
-        content: "+"
-  // Выпадающий список ( Контент )
-  .dropdown__list
-    position: absolute
-    top: 100%
-    padding: 0
-    margin: 0
-    list-style: none
-    opacity: 0
-    visibility: hidden
-    background-color: $colorPrimaryLight
-    @include transition
-    @include mediaMaxWidthTablet
-      position: relative
-      left: 0
-      top: 0
-      width: 100%
-      max-height: 0
-  .dropdown__item
-    margin: 0
-    @include mediaMaxWidthTablet
-      position: relative
-      left: -20px
-      opacity: 0
-      @include transition
-      transition-delay: 0.5s
-  .dropdown__link
-    padding: 8px 16px
-    display: block
-    color: $colorTertiary
-    text-decoration: none
-    white-space: nowrap
-    text-transform: uppercase
-    background-color: $colorPrimaryLight
-    @include mediaMaxWidthTablet
-      padding: 8px 24px
-    &:hover
-      color: $colorSecondary
-      background-color: $colorTertiary
+/*soc-menu*/
+.soc
+  ul
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    list-style-type: none
+    margin: 0 -10px
+    li
+      margin: 0 10px
+      a
+        display: block
+/*soc-menu*/

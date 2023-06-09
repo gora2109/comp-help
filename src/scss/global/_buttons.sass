@@ -1,22 +1,22 @@
 //Button colors
 $btnTextSize:$mainFontSize
-$btnLineHeight:$mainLineHeight + 4px
-$btnPadding: 8px 16px
+$btnLineHeight:$mainLineHeight
+$btnPadding: 20px 48.5px
 $btnWeight: $mainFontWeigth + 200
 
 //Button Primary color
 $btnBorderColorPrimary: $colorSecondary
 $btnBackgroundColorPrimary: $colorSecondary
-$btnTextColorPrimary: $colorTertiary
+$btnTextColorPrimary: $colorPrimary
 
 //Button Primary active color
-$btnBorderColorPrimaryActive: $colorSecondaryDark
-$btnBackgroundColorPrimaryActive: $colorSecondaryDark
+$btnBorderColorPrimaryActive: $colorSecondary
+$btnBackgroundColorPrimaryActive: $colorSecondary
 $btnTextColorPrimaryActive: $colorTertiary
 
 //Button Primary hover color
-$btnBorderColorPrimaryHover: $colorSecondaryLight
-$btnBackgroundColorPrimaryHover: $colorSecondaryLight
+$btnBorderColorPrimaryHover: $colorPrimaryDark
+$btnBackgroundColorPrimaryHover: $colorPrimaryDark
 $btnTextColorPrimaryHover: $colorTertiary
 
 //Button Primary disabled color
@@ -25,44 +25,24 @@ $btnBackgroundColorPrimaryDisabled: $colorPrimaryLight
 $btnTextColorPrimaryDisabled: $colorTertiaryDark
 
 //Button Secondary color
-$btnBorderColorSecondary: $colorPrimaryLight
-$btnBackgroundColorSecondary: $colorTertiary
-$btnTextColorSecondary: $colorPrimary
+$btnBorderColorSecondary: $colorPrimaryDark
+$btnBackgroundColorSecondary: $colorPrimaryDark
+$btnTextColorSecondary: $colorTertiary
 
 //Button Secondary active color
-$btnBorderColorSecondaryActive: $colorSecondaryDark
-$btnBackgroundColorSecondaryActive: $colorSecondaryDark
+$btnBorderColorSecondaryActive: $colorPrimaryDark
+$btnBackgroundColorSecondaryActive: $colorPrimaryDark
 $btnTextColorSecondaryActive: $colorTertiary
 
 //Button Secondary hover color
-$btnBorderColorSecondaryHover: $colorPrimary
-$btnBackgroundColorSecondaryHover: $colorPrimary
+$btnBorderColorSecondaryHover: $colorSecondary
+$btnBackgroundColorSecondaryHover: $colorSecondary
 $btnTextColorSecondaryHover: $colorTertiary
 
 //Button Secondary disabled color
 $btnBorderColorSecondaryDisabled: $colorTertiaryLight
 $btnBackgroundColorSecondaryDisabled: $colorTertiary
 $btnTextColorSecondaryDisabled: $colorTertiaryLight
-
-//Button Tertiary color
-$btnBorderColorTertiary: transparent
-$btnBackgroundColorTertiary: transparent
-$btnTextColorTertiary: $colorPrimary
-
-//Button Tertiary active color
-$btnBorderColorTertiaryActive: $colorTertiaryLight
-$btnBackgroundColorTertiaryActive: $colorTertiaryLight
-$btnTextColorTertiaryActive: $colorPrimary
-
-//Button Tertiary hover color
-$btnBorderColorTertiaryHover: $colorTertiaryDark
-$btnBackgroundColorTertiaryHover: $colorTertiaryDark
-$btnTextColorTertiaryHover: $colorPrimary
-
-//Button Tertiary disabled color
-$btnBorderColorTertiaryDisabled: $colorTertiaryLight
-$btnBackgroundColorTertiaryDisabled: $colorTertiaryLight
-$btnTextColorTertiaryDisabled: $colorTertiary
 
 //Button styling
 .btn,
@@ -77,7 +57,7 @@ input[type="reset"]
   border: 1px solid $btnBorderColorPrimary
   text-decoration: none
   display: inline-block
-  border-radius: 0
+  border-radius: 30px
   outline: none
   font-weight: $btnWeight
   text-align: center
@@ -85,6 +65,8 @@ input[type="reset"]
   appearance: none
   background-color: $btnBackgroundColorPrimary
   @include transition
+  @include hd-desktop
+    padding: 12px 24px
   .icon
     fill: $btnTextColorPrimary
   &:hover
@@ -109,7 +91,7 @@ input[type="reset"]
       fill: $btnTextColorPrimaryDisabled
   // Вторичная кнопка
   &.btn_secondary
-    color: $btnBorderColorSecondary
+    color: $btnTextColorSecondary
     border-color: $btnBorderColorSecondary
     background-color: $btnBackgroundColorSecondary
     .icon
@@ -132,31 +114,6 @@ input[type="reset"]
       color: $btnTextColorSecondaryDisabled
       .icon
         fill: $btnTextColorSecondaryDisabled
-  // Третичная кнопка
-  &.btn_tertiary
-    color: $btnTextColorTertiary
-    border-color: $btnBorderColorTertiary
-    background-color: $btnBackgroundColorTertiary
-    .icon
-      fill: $btnTextColorTertiary
-    &:hover
-      color: $btnTextColorTertiaryActive
-      border-color: $btnBorderColorTertiaryHover
-      background-color: $btnBackgroundColorTertiaryHover
-      .icon
-        fill: $btnTextColorTertiaryActive
-    &:active
-      color: $btnTextColorSecondaryActive
-      border-color: $btnBorderColorTertiaryActive
-      background-color: $btnBackgroundColorTertiaryActive
-      .icon
-        fill: $btnTextColorSecondaryActive
-    &:disabled
-      color: $btnTextColorTertiaryDisabled
-      border-color: $btnBorderColorTertiaryDisabled
-      background-color: $btnBackgroundColorTertiaryDisabled
-      .icon
-        fill: $btnTextColorTertiaryDisabled
 .btn
   &-group
     display: flex

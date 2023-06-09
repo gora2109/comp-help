@@ -1,0 +1,36 @@
+.main
+  &-banner
+    padding: 150px 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include desktop
+      padding: 100px 0
+    .wysiwyg
+      & > *
+        &:not(:last-child)
+          margin-bottom: 32px
+          @include mediaMaxWidthTabMobile
+            margin-bottom: 20px
+      p
+        max-width: 804px
+        font-size: $mainFontSize + 12
+        line-height: $mainLineHeight + 14
+        @include desktop
+          font-size: $mainFontSize + 5
+          line-height: $mainLineHeight + 7
+        @include mediaMaxWidthDesktop
+          font-size: $mainFontSize
+          line-height: $mainLineHeight
+      h1, h2, h3, h4, h5, h6,
+      .h1, .h2, .h3, .h4, .h5, .h6
+        margin-bottom: 10px
+      ul
+        li
+          list-style-image: url("../images/list-marker.png")
+          padding-left: 0
+          margin-bottom: 10px
+          &:before
+            display: none
+          &::marker
+            line-height: 15px

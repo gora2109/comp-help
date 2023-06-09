@@ -33,10 +33,10 @@ textarea
     border-color: $inputBorderColorError
 textarea
   width: 100%
-  height: 96px
+  height: 142px
   resize: none
 
-// Ячейка формы
+// Form Cell
 .form
   &-field
     margin-bottom: $formFieldMarginBottom
@@ -60,13 +60,13 @@ textarea
     .error
       &-label
         top: calc(100% - $formFieldMarginBottom)
-// Сообщение об ошибке
+// Error message
 .error
   &-label
-    color: $colorError
-    position: absolute
-    top: 100%
-    left: 0
+    color: $colorTertiary !important
+    //position: absolute
+    //top: 100%
+    //left: 0
     font-size: $inputTextError
     line-height: $inputLineHeightError
     font-style: italic

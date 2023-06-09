@@ -21,11 +21,11 @@ gulp.task('watch', gulp.series(function (){
 	gulp.src([
 		'node_modules/font-awesome/css/font-awesome.css', // подключение font-awesome
 		'node_modules/swiper/swiper-bundle.min.css', // Подключаем Swiper
-		'node_modules/air-datepicker/air-datepicker.css', // Подключаем air-datepicker
-		'node_modules/plyr/dist/plyr.css', // Подключаем plyr-video
-		'node_modules/@fancyapps/ui/dist/fancybox.css', // Подключаем fancybox
+		// 'node_modules/air-datepicker/air-datepicker.css', // Подключаем air-datepicker
+		// 'node_modules/plyr/dist/plyr.css', // Подключаем plyr-video
+		// 'node_modules/@fancyapps/ui/dist/fancybox.css', // Подключаем fancybox
 
-		'node_modules/choices.js/public/assets/styles/choices.css', // подключение choices
+		// 'node_modules/choices.js/public/assets/styles/choices.css', // подключение choices
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(gulp.dest('build/css'));
@@ -39,19 +39,19 @@ gulp.task('watch', gulp.series(function (){
 
 		'node_modules/imask/dist/imask.min.js', // подключение Маски
 		'node_modules/swiper/swiper-bundle.min.js', // Подключаем Swiper
-		'node_modules/plyr/dist/plyr.polyfilled.js', // Подключаем plyr-video
+		// 'node_modules/plyr/dist/plyr.polyfilled.js', // Подключаем plyr-video
 
-		'node_modules/air-datepicker/air-datepicker.js', // Подключаем air-datepicker
+		// 'node_modules/air-datepicker/air-datepicker.js', // Подключаем air-datepicker
 
-		'node_modules/@googlemaps/markerclusterer/dist/index.min.js', // Подключаем markerclusterer. Програма для google-maps
+		// 'node_modules/@googlemaps/markerclusterer/dist/index.min.js', // Подключаем markerclusterer. Програма для google-maps
 
-		'node_modules/chart.js/dist/chart.js', // Подключаем плагин графиков Chart.js
+		// 'node_modules/chart.js/dist/chart.js', // Подключаем плагин графиков Chart.js
 
-		'node_modules/@fancyapps/ui/dist/fancybox.umd.js', // Подключаем плагин fancybox
+		// 'node_modules/@fancyapps/ui/dist/fancybox.umd.js', // Подключаем плагин fancybox
 
-		'node_modules/sticky-sidebar/dist/sticky-sidebar.js', // Подключаем плагин липкого sidebar
+		// 'node_modules/sticky-sidebar/dist/sticky-sidebar.js', // Подключаем плагин липкого sidebar
 
-		'node_modules/choices.js/public/assets/scripts/choices.min.js', // подключение плагина choices для select
+		// 'node_modules/choices.js/public/assets/scripts/choices.min.js', // подключение плагина choices для select
 
 	])
 		.pipe(concat('libs.js'))

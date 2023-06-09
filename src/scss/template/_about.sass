@@ -1,0 +1,75 @@
+.about
+  &-section
+    &-description
+      padding-bottom: 120px
+      @include desktop
+        padding-bottom: 100px
+      @include mediaMaxWidthDesktop
+        padding-bottom: 80px
+      @include mediaMaxWidthTabMobile
+        padding-bottom: 60px
+      .wysiwyg
+        & > *
+          &:not(:last-child)
+            margin-bottom: 30px
+        p
+          &:not(:last-child)
+            margin-bottom: 0
+        @include mediaMaxWidthTabMobile
+          margin-bottom: 30px
+          & > *
+            &:not(:last-child)
+              margin-bottom: 20px
+    &-list
+      padding-top: 120px
+      @include desktop
+        padding-top: 100px
+      @include mediaMaxWidthDesktop
+        padding-top: 80px
+      @include mediaMaxWidthTabMobile
+        padding-top: 60px
+  &-image
+    overflow: hidden
+    border-radius: 30px
+  &-list
+    justify-content: center
+    .about
+      &-item
+        border-radius: 50% !important
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        &:before
+          display: none
+        .wysiwyg
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          display: flex
+          align-items: center
+          justify-content: center
+          font-size: $mainFontSize + 6
+          line-height: $mainLineHeight + 7
+          font-weight: $mainFontWeigth + 200
+          text-align: center
+          color: $colorPrimary
+          padding: 45px
+          @include mediaMaxWidthDesktop
+            padding: 25px
+            font-size: $mainFontSize
+            line-height: $mainLineHeight
+        .image
+          z-index: -1
+          &:before
+            content: ''
+            background-color: rgba(253, 208, 59, 0.9)
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+          img
+            width: 100%
+            object-fit: cover

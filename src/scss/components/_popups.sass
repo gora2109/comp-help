@@ -1,9 +1,9 @@
-$popupBackgroundColor: $colorTertiary
-$popupPadding: 32px 32px 16px
+$popupBackgroundColor: #100A03
+$popupPadding: 52px 90px 60px
 $popupWidthContainer: 1024px
 $popupWidthContainerMiddle: 768px
-$popupWidthContainerTiny: 480px
-$popupWrapBackgroundColor: rgba(0, 0, 0, 0.4)
+$popupWidthContainerTiny: 594px
+$popupWrapBackgroundColor: rgba(253, 208, 59, 0.7)
 .popup
   cursor: auto
   min-width: 320px
@@ -16,6 +16,9 @@ $popupWrapBackgroundColor: rgba(0, 0, 0, 0.4)
   z-index: 111
   margin: auto
   display: none
+  position: relative
+  @include mediaMaxWidthTabMobile
+    padding: 30px
   &.active
     visibility: visible
     opacity: 1
@@ -29,12 +32,12 @@ $popupWrapBackgroundColor: rgba(0, 0, 0, 0.4)
   // Попап Малой Ширины
   &.popup-tiny
     width: $popupWidthContainerTiny
-  &.popup-middle,
-  &.popup-tiny
-    @include mediaMaxWidthTabMobile
-      max-height: 100%
-      height: 100%
-      width: 100%
+  //&.popup-middle,
+  //&.popup-tiny
+  //  @include mediaMaxWidthTabMobile
+  //    max-height: 100%
+  //    height: 100%
+  //    width: 100%
   &-open
     overflow: hidden
   &-init
@@ -48,6 +51,7 @@ $popupWrapBackgroundColor: rgba(0, 0, 0, 0.4)
     height: 100%
     z-index: 200
     background-color: $popupWrapBackgroundColor
+    backdrop-filter: blur(20px)
     @include transition-long
     visibility: hidden
     opacity: 0
@@ -58,18 +62,32 @@ $popupWrapBackgroundColor: rgba(0, 0, 0, 0.4)
       visibility: visible
       opacity: 1
 
-  &-header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-bottom: 24px
-    padding-bottom: 16px
-    border-bottom: 1px solid $colorTertiaryLight
-    .popup-remove
-      margin-left: auto
-    &__title
-      margin-right: 24px
-      & > *
-        margin-bottom: 0
+  .popup-remove
+    position: absolute
+    padding: 0
+    background-color: transparent
+    border: none
+    top: 24px
+    right: 26px
+    @include transition
+    .icon
+      width: 22px
+      height: 22px
+      fill: $colorSecondary
+    &:hover
+      .icon
+        fill: $colorTertiary
   &-content
     margin-bottom: 16px
+    .wysiwyg
+      margin-bottom: 30px
+      font-size: $mainFontSize - 6
+      line-height: $mainLineHeight + 3
+      & > *
+        &:not(:last-child)
+          margin-bottom: 3px
+      h1, h2, h3, h4, h5, h6,
+      .h1, .h2, .h3, .h4, .h5, .h6
+        font-weight: $mainFontWeigth + 100
+        color: $colorSecondary
+

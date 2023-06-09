@@ -2,31 +2,37 @@
 // Контейнер
 .container
   width: 100%
-  max-width: 1248px
+  max-width: 1480px
   margin: 0 auto
-  padding: 0 16px
-  @include mediaMaxWidthTabMobile
-    padding: 0 12px
-    max-width: 100%
+  padding: 0 10px
+  @include hd-desktop
+    max-width: 1168px
+  @include desktop
+    max-width: 1024px
+  @include mediaMaxWidthDesktop
+    max-width: 95%
+  //@include mediaMaxWidthTabMobile
+  //  padding: 0 12px
+
 // Сетка
 .row
   display: flex
   height: 100%
   flex-wrap: wrap
-  width: calc(100% + 32px)
-  margin: 0 -16px
+  //width: calc(100% + 32px)
+  margin: 0 -10px
   &.row_justify-content-between
     justify-content: space-between
   @include mediaMaxWidthTablet
-    width: calc(100% + 24px)
-    margin: 0 -12px
+    //width: calc(100% + 10px)
+    //margin: 0 -12px
 .col
   display: flex
   flex-direction: column
-  padding: 0 16px
+  padding: 0 10px
   box-sizing: border-box
-  @include mediaMaxWidthTablet
-    padding: 0 12px
+  //@include mediaMaxWidthTablet
+  //  padding: 0 12px
   &.col_1
     width: 8.3333%
 
@@ -85,29 +91,6 @@
       width: 91.666667%
     &.col_big-desktop-12
       width: 100%
-  @include mediaMaxWidthDesktop
-    &.col_middle-desktop-2
-      width: 16.66%
-    &.col_middle-desktop-3
-      width: 25%
-    &.col_middle-desktop-4
-      width: 33.3%
-    &.col_middle-desktop-5
-      width: 41.666667%
-    &.col_middle-desktop-6
-      width: 50%
-    &.col_middle-desktop-7
-      width: 58.333333%
-    &.col_middle-desktop-8
-      width: 66.666667%
-    &.col_middle-desktop-9
-      width: 75%
-    &.col_middle-desktop-10
-      width: 83.333333%
-    &.col_middle-desktop-11
-      width: 91.666667%
-    &.col_middle-desktop-12
-      width: 100%
   @include desktop
     &.col_desktop-2
       width: 16.66%
@@ -130,6 +113,29 @@
     &.col_desktop-11
       width: 91.666667%
     &.col_desktop-12
+      width: 100%
+  @include mediaMaxWidthDesktop
+    &.col_middle-desktop-2
+      width: 16.66%
+    &.col_middle-desktop-3
+      width: 25%
+    &.col_middle-desktop-4
+      width: 33.3%
+    &.col_middle-desktop-5
+      width: 41.666667%
+    &.col_middle-desktop-6
+      width: 50%
+    &.col_middle-desktop-7
+      width: 58.333333%
+    &.col_middle-desktop-8
+      width: 66.666667%
+    &.col_middle-desktop-9
+      width: 75%
+    &.col_middle-desktop-10
+      width: 83.333333%
+    &.col_middle-desktop-11
+      width: 91.666667%
+    &.col_middle-desktop-12
       width: 100%
   @include mediaMaxWidthTablet
     &.col_tab-3

@@ -2,35 +2,6 @@ let tabsSlidsHeader = {},
     sliderObj = {};
 /*todo: функции слайдера*/
 /*sliders*/
-/*banner slider*/
-function banner(){
-    let banner = document.querySelectorAll('.banner');
-    for (let i = 0; i < banner.length; i++){
-        let bannerItem = banner[i].id;
-        initBanner(bannerItem)
-    }
-}
-function initBanner(id) {
-    var swiper = new Swiper(`#${id}`,{
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination:{
-            el: `.slider-pagination`,
-            clickable: true,
-        },
-        autoplay:true,
-        navigation:{
-            nextEl: `.slider-nav-btn-next`,
-            prevEl: `.slider-nav-btn-prev`,
-        }
-    });
-    sliderObj[`${id}`] = {
-        id: id,
-        slider: swiper
-    }
-}
-/*banner slider*/
-
 /*carousel slider*/
 function carousel(){
     let carousel = document.querySelectorAll('.slider-carousel');
@@ -152,9 +123,22 @@ function initSliderTabs(id){
     }
 }
 /*slider tabs*/
+/*reviews*/
+function initReviewsSlider(){
+    var swiper = new Swiper(`#reviews-slider-1 .slider`, {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        autoplay:true,
+        navigation:{
+            nextEl: `#reviews-slider-1 .slider-nav-btn-next`,
+            prevEl: `#reviews-slider-1 .slider-nav-btn-prev`,
+        },
+    });
+}
+/*reviews*/
 /*sliders*/
 document.addEventListener("DOMContentLoaded", function () {
-    banner();
+    initReviewsSlider();
     carousel();
     sliderTabs();
 });

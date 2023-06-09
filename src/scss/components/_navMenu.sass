@@ -1,6 +1,18 @@
+$navFonts: $mainFontSize
+$navLineHeight: $mainLineHeight
+$navColor: $colorTertiary
+$navColorHover: $colorSecondary
 .nav
   &-list
     list-style-type: none
     margin: 0
   &-item
   &-link
+    text-decoration: none
+    font-size: $navFonts
+    line-height: $navLineHeight
+    color: $navColor
+    font-weight: $mainFontWeigth
+    @include transition
+    &:hover
+      color: $navColorHover

@@ -27,6 +27,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Имя слишком короткое',
                         en: 'Name is too short',
+                        ua: 'Назва занадто коротка',
                     },
                 },
                 {
@@ -34,6 +35,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Обязательное поле',
                         en: 'Field is required',
+                        ua: 'Поле обов`язкове',
                     },
                 },
                 {
@@ -41,6 +43,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Поле, обязательное для заполнения. Пожалуйста, введите свой телефон',
                         en: 'Field is required. Please enter your phone',
+                        ua: 'Поле обов`язкове. Будь ласка, введіть свій телефон',
                     },
                 },
                 {
@@ -48,6 +51,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Поле, обязательное для заполнения. Пожалуйста введите ваш пароль',
                         en: 'Field is required. Please enter your password',
+                        ua: 'Поле обов`язкове. Будь ласка, введіть свій пароль',
                     },
                 },
                 {
@@ -55,6 +59,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Поле, обязательное для заполнения. Пожалуйста, введите адрес электронной почты',
                         en: 'Field is required. Please enter your email',
+                        ua: 'Поле обов`язкове. Будь ласка, введіть свою електронну адресу',
                     },
                 },
                 {
@@ -62,6 +67,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Не верно введено поле ввода',
                         en: 'Input field entered incorrectly',
+                        ua: 'Поле введення введено невірно',
                     },
                 },
                 {
@@ -69,6 +75,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Вы должны выбрать хотя бы один канал связи',
                         en: 'You should select at least one communication channel',
+                        ua: 'Ви повинні вибрати хоча б один канал зв`язку',
                     },
                 },
                 {
@@ -76,6 +83,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Данное поле обязательное. Укажите дату',
                         en: 'This field is required. Specify a date',
+                        ua: 'Це поле є обов`язковим. Вкажіть дату',
                     },
                 },
                 {
@@ -83,6 +91,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Данное поле обязательное. Укажите конечную дату',
                         en: 'This field is required. Specify end date',
+                        ua: 'Це поле є обов`язковим. Вкажіть кінцеву дату',
                     },
                 },
                 {
@@ -90,6 +99,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Данное поле обязательное. Укажите начальную дату',
                         en: 'This field is required. Specify start date',
+                        ua: 'Це поле є обов`язковим. Вкажіть дату початку',
                     },
                 },
                 {
@@ -97,6 +107,7 @@ function formValidate(element) {
                     dict: {
                         ru: 'Данное поле обязательное. Укажите начальную и конечную дату ',
                         en: 'This field is required. Specify a start and end date',
+                        ua: 'Це поле є обов`язковим. Укажіть дату початку та закінчення',
                     },
                 },
                 {
@@ -104,12 +115,13 @@ function formValidate(element) {
                     dict: {
                         ru: 'Загруженные файлы имеют одно или несколько недопустимых свойств (расширение/размер/тип и т. д.)',
                         en: 'Uploaded files have one or several invalid properties (extension/size/type etc)',
+                        ua: 'Завантажені файли мають одну або декілька недійсних властивостей (розширення/розмір/тип тощо)',
                     },
                 },
             ]
         );
 
-        validate.setCurrentLocale('ru');// передаем параметр языка для валидации формы
+        validate.setCurrentLocale('ua');// передаем параметр языка для валидации формы
         //input field initialization on error and required fields
         for (let j = 0; j < inputs.length; j++){
             let id = inputs[j].id,
@@ -239,8 +251,8 @@ function formValidate(element) {
         //method call on success
         validate.onSuccess((ev) => {
             ev.preventDefault();
-            successModal('success-popup');
-            errorModal('error-popup');
+            // successModal('success-popup');
+            // errorModal('error-popup');
             clearForm(validate.form);
         });
         console.log(validate)

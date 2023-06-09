@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
     <meta charset="utf-8">
 <title>Базовый маркап</title>
@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/libs.min.css"/><!-- library styles -->
 <link rel="stylesheet" href="css/main.css"/><!-- custom styles -->
 <link href="images/favicon.webp" rel="shortcut icon" type="image/x-icon" /><!-- favicon -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap" rel="stylesheet">  <!-- custom fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper" class="wrapper">
@@ -18,55 +18,20 @@
             <!-- logo -->
             <div class="logo">
                 <a href="index.html" class="logo__link">
-                    <img src="images/logo.png" alt="logo"/>
+                    <span>КОМП’ЮТЕРНА</span> ДОПОМОГА
                 </a>
             </div>
-            <div class="nav-toggle">
-                <span class="nav-toggle__link"></span>
-                <span class="nav-toggle__link"></span>
-                <span class="nav-toggle__link"></span>
-            </div>
+
             <div class="header-mobile">
                 <div class="header-mobile__block">
-                    <div class="header-mobile__container">
-                        <div class="nav-toggle">
-                            <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9999 18.8997L9.39322 8.29297L7.979 9.70718L18.5857 20.3139L7.97916 30.9204L9.39337 32.3346L19.9999 21.7281L30.6064 32.3346L32.0206 30.9204L21.4141 20.3139L32.0208 9.70721L30.6066 8.29299L19.9999 18.8997Z"/>
-                            </svg>
-                        </div>
-                        <div class="header-mobile__rows">
-                            <div class="header-nav">
-                                <div class="header-nav__container">
-                                    <div class="header-nav__menu">
-                                        <nav class="nav">
-                                            <ul class="nav-list nav__list">
-                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
-                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
-                                                <li class="nav__item dropdown">
-                                                    <a class="nav__link" href="#">
-                                                        Пункт меню
-                                                    </a>
-                                                    <i class="dropdown__icon"></i>
-                                                    <ul class="dropdown__list">
-                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
-                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
-                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
-                                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пункт меню</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav__item"><a href="#" class="nav__link">Пункт меню</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-mobile__col">
-
-                                <nav class="soc-menu">
-                                    <ul>
-                                        <li><a href="#">instagram</a></li>
-                                        <li><a href="#">facebook</a></li>
-                                        <li><a href="#">twitter</a></li>
+                    <div class="header-nav">
+                        <div class="header-nav__container">
+                            <div class="header-nav__menu">
+                                <nav class="nav">
+                                    <ul class="nav-list nav__list">
+                                        <li class="nav__item nav-item"><a href="#services" class="nav__link nav-link">Послуги</a></li>
+                                        <li class="nav__item nav-item"><a href="#about" class="nav__link nav-link">Про нас</a></li>
+                                        <li class="nav__item nav-item"><a href="#footer" class="nav__link nav-link">Контакти</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -74,396 +39,466 @@
                     </div>
                 </div>
             </div>
+
+            <div class="header-info__container">
+                <div class="header-info__block ">
+                    <a href="#" class="btn popup-init" data-popupname="location-popup"><i class="fa fa-phone" aria-hidden="true"></i> <span>Безкоштовна консультація</span></a>
+                </div>
+                <div class="header-info__block display-none display-middle-desktop-block">
+                    <div class="nav-toggle">
+                    <span class="nav-toggle__link"></span>
+                    <span class="nav-toggle__link"></span>
+                    <span class="nav-toggle__link"></span>
+                    <span class="nav-toggle__link"></span>
+                </div>
+                </div>
+            </div>
+
         </div><!-- //container -->
     </div>
 </header><!-- //site-header -->
     <main id="main" class="main">
-        <div class="main-slider slider">
-            <div class="slider__item" style="background-image: url('images/content/slider-img.jpg');">
-            </div><!-- //item -->
-            <div class="slider__item" style="background-image: url('images/content/slider-img.jpg');">
-            </div><!-- //item -->
-        </div><!-- //main-slider -->
-        <section class="section">
+        <div class="main-banner full-screen banner" style="background-image: url('/images/main-banner.jpg')">
             <div class="container">
-                <h1>Рекомендации по вёрстке экранной текстовой страницы со статьёй, заметкой, книжной главой или текстом о компании.</h1>
-                <h2 class="popup-init" data-popupname="location-popup"> Вызов попапа</h2>
-                <h2 class="popup-init" data-popupname="location-popup">  <a data-fancybox="gallery" href="big_1.jpg">Вызов попапа fancybox</a></h2>
-                <p>
-                    В отличие от модульной страницы, состоящей из отдельных блоков-атомов, текстовая страница представляет собой поток для последовательного чтения — например как этот совет. Подобно длинной молекуле полимера, текстовая страница включает в себя разнообразные элементы в свободном порядке: подзаголовки, списки, таблицы и иллюстрации.
-                </p>
-                <h2>Основной текст</h2>
-                <p>
-                    Колонка основного текста занимает 60—70% ширины окна. В «резиновой» вёрстке ширина текстовой полосы уменьшается или увеличивается с изменением размера окна или экрана. Но разрешение экранов постоянно растёт, поэтому имеет смысл ограничивать максимальную ширину колонки текста, чтобы строки не становились чрезмерно длинными, а страница — трудной для чтения.
-                </p>
-                <p>
-                    Текст в основной колонке имеет длинные строки, и, как правило, выигрывает в читаемости при небольшом увеличении интерлиньяжа по сравнению со стандартным.
-                </p>
-                <p>
-                    Текст, выровненный влево с рваным правым краем, должен «дышать» справа, то есть край формата или соседняя колонка не должны подходить к нему слишком близко.
-                </p>
-                <p>
-                    Текст дробится на абзацы. В экранной вёрстке абзацы обычно отделяют вертикальными отступами. В канонической швейцарской сетке, привязанной к базовым линиям, отступ между абзацами строго равен одной строке, поэтому его иногда называют «слепой строкой». На «бесконечной» экранной странице эта условность не имеет смысла.
-                </p>
-                <h2>Подзаголовки</h2>
-
-                <p>
-                    Основной текст имеет один главный заголовок первого уровня и дробится на части с помощью подзаголовков.
-                </p>
-                <p>
-                    Кегль заголовков второго уровня обычно увеличен по сравнению с основным текстом. Перед такими заголовками пропускают примерно две строки, после делают отступ, равный обычному абзацному — как у надписи «Подзаголовки» в этом разделе.
-                </p>
-                <h3>Заголовки третьего уровня</h3>
-                <p>
-                    Заголовки третьего уровня удобно набирать полужирным основного кегля и не отбивать от последующего текста, как над колонками текста на развороте ниже:
-                </p>
-                <p>
-                    Подзаголовок в подбор к основному тексту. Ещё один способ избежать лишних отступов на странице.
-                </p>
-                <p>
-                    Подобные «уплотнительные» меры визуально упрощают структуру страницы, помогают избежать путаницы в уровнях вложенности заголовков и частей текста.
-                </p>
-                <p>
-                    Заголовки четвёртого уровня запрещены в любом уважающем себя издании, кроме специализированных словарей и справочников.
-                </p>
-                <p>
-                    Подзаголовки в иерархии могут быть оформлены комбинацией разных стилей: кегля, полужирного начертания, капители, курсива и выделения цветом. Главные правила — чередование, то есть яркий контраст стиля заголовков на соседних уровнях вложенности, и чувство меры.
-                </p>
-
-                <h2>Списки</h2>
-                <p>
-                    Список, или перечень,— это предложение с однородными членами, разбитыми для удобства чтения на отдельные строки, обозначенными графическими маркерами или наборными символами. Поэтому любой список предваряется обобщающим текстом (общей, неповторяющейся частью предложения) или заголовком в той же синтаксической роли.
-                </p>
-                <h3>
-                    Нумерованные и упорядоченные
-                </h3>
-                <p>
-                    Арабскими цифрами с точкой обозначают элементы перечня, если каждый элемент является отдельным предложением, то есть начинается с прописной буквы и оканчивается точкой. Но даже в этом случае список представляет собой синтаксическую и смысловую единицу, требующую обобщающего текста или заголовка.
-                </p>
-                <p>
-                    Для успешной работы дизайнеру необходимо:
-                </p>
-                <ol>
-                    <li>дистанционное обучение;</li>
-                    <li>
-                        беспощадная система отбора и отсева на всех ступенях;
-                        <ol>
-                            <li>дистанционное обучение,</li>
-                            <li> беспощадная система отбора и отсева на всех ступенях,</li>
-                            <li>бесплатные места для лучших студентов,</li>
-                            <li>гарантия трудоустройства,</li>
-                            <li>чистая радость познания.</li>
-                        </ol>
-                    </li>
-                    <li>бесплатные места для лучших студентов;</li>
-                    <li>гарантия трудоустройства;</li>
-                    <li>чистая радость познания.</li>
-                </ol>
-                <h3>Ненумерованные списки</h3>
-                <p>
-                    Вместо цифр и букв в ненумерованных списках элементы часто обозначаются графическими маркерами или символами.
-                </p>
-                <p>
-                    Наша фирма предоставляет следующие услуги::
-                </p>
-                <ul>
-                    <li>Дизайн.</li>
-                    <li>Бизнес-аналитика:
-                        <ul>
-                            <li>исследование рынка;</li>
-                            <li>написание технического задания.</li>
-                        </ul>
-                    </li>
-                    <li>Программирование.</li>
-                    <li>Интернет-маркетинг.</li>
-                </ul>
-                <h2>Таблицы</h2>
-                <table>
-                    <tr>
-                        <th>
-                            Валюта
-                        </th>
-                        <th>
-                            Покупка
-                        </th>
-                        <th>
-                            Продажа
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            EUR
-                        </td>
-                        <td>
-                            27.55
-                        </td>
-                        <td>
-                            28.15
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            USD
-                        </td>
-                        <td>
-                            27.55
-                        </td>
-                        <td>
-                            28.15
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            RUB
-                        </td>
-                        <td>
-                            27.55
-                        </td>
-                        <td>
-                            28.15
-                        </td>
-                    </tr>
-
-                </table>
-                <h2>Особые элементы текста</h2>
-                <h3>Ссылки</h3>
-                <p>
-                    Инструкция: <a href="#">manual.pdf</a> 0,7 МБ
-                </p>
-                <p>
-                    Ссылку на адрес электронной почты (mailto) рекомендуется использовать только вместе с адресом, указанным в явном виде: <a href="#">manager@dzencode.com</a>
-                </p>
-                <h3>Псевдоссылки</h3>
-                <p>
-                    Инструкция :<a href="#" class="sub-link">manual.pdf</a>
-                </p>
-                <h3>Надстрочный знак</h3>
-                <p>
-                    Стоимость: <strong>5399 <sup>грн</sup></strong>
-                </p>
-                <h3>Цитаты</h3>
-                <p>
-                    предназначен для выделения длинных цитат, которые могут состоять из нескольких абзацев. Тег выделяет цитату как отдельный блок текста с отступами.
-                </p>
-                <blockquote>
-                    Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат и сами всё дадут!
-                    Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат и сами всё дадут!
-                    Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат и сами всё дадут!
-                </blockquote>
-                <p>
-                    "q" предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически обрамляется кавычками:
-                </p>
-                <q>
-                    предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически обрамляется кавычками
-                    предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически обрамляется кавычками
-                    предназначен для выделения коротких цитат в предложениях. Текст внутри этого тега автоматически обрамляется кавычками
-                </q>
-                <h2>Елементы формы</h2>
-                <form action="post" class="form">
-                    <fieldset>
-                        <div class="row">
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <input type="text" placeholder="Контент" required>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <input type="text" placeholder="Контент" required>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <input type="text" placeholder="Контент" required disabled>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="checkbox" name="chekbox" required>
-                                            <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="checkbox" name="chekbox" required checked>
-                                             <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="checkbox" name="chekbox" required disabled>
-                                            <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="radio" name="radio" required>
-                                            <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="radio" name="radio" required checked>
-                                            <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <span class="custom-check">
-                                            <input class="custom-check__input" type="radio" name="radio" required disabled>
-                                            <span class="custom-check__text">Пример текста</span>
-                                        </span>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <select>
-                                            <option value="v1">Контент</option>
-                                            <option value="v2">Контент</option>
-                                            <option value="v3">Контент</option>
-                                        </select>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <select>
-                                            <option value="v1">Контент</option>
-                                            <option value="v2">Контент</option>
-                                            <option value="v3">Контент</option>
-                                        </select>
-                                    </label>
-
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_4 col_tab-6 col_mob-12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-                                        <select disabled>
-                                            <option value="v1">Контент</option>
-                                            <option value="v2">Контент</option>
-                                            <option value="v3">Контент</option>
-                                        </select>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_12">
-                                <div class="form-field">
-                                    <label class="label-wrap">
-                                        <span class="form-field__title">Заголовок</span>
-
-                                        <textarea name="" placeholder="Контент"></textarea>
-                                    </label>
-                                </div><!-- //form-field -->
-                            </div>
-                            <div class="col col_2 col_tab-6">
-                                <button type="submit">Кнопка</button>
+                <div class="row">
+                    <div class="col col_8 col_middle-desktop-9 col_mob-12">
+                        <div class="wysiwyg">
+                            <h1 class="h1">Зламалась комп'ютерна техніка, або злетів Віндовс?</h1>
+                            <p>Не гайте свій час, дзвоніть прямо зараз, і вже сьогодні все буде працювати!</p>
+                            <h3>Переваги для Вас:</h3>
+                            <ul>
+                                <li>Виїзд майстра по місту та області</li>
+                                <li>Три точки прийому видачі у вашому місті</li>
+                                <li>Гарантія від 1 до 5ти років!</li>
+                                <li>Знижка 10 % на перше звернення!</li>
+                            </ul>
+                            <button type="button" class="btn">Викликати майстра</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //main-slider -->
+        <section class="section section-dark banner top-banner" style="background-image: url('/images/banner-1.jpg')">
+            <div class="container">
+                <div class="row justify-center align-center">
+                    <div class="col_6 col_mob-8">
+                        <div class="wysiwyg text-center">
+                            <p><small>Потрібна допомога майстра?</small></p>
+                            <h2>Знижка 10% на перше звернення!</h2>
+                            <button type="button" class="btn btn_secondary">Замовити дзвінок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="section banner" style="background-image: url('/images/services.jpg')">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h2 title">Наші послуги</h2>
+                </div>
+                <div class="section-container">
+                    <div class="row post-list services-list">
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Комп'ютер висне</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
                             </div>
                         </div>
-                    </fieldset>
-                </form>
-            </div><!-- //content -->
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Встановлення ОС (Windows XP/7/10/11)</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Видалення вірусів</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Підключення та налаштування WI-FI роутера</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Встановлення та налаштування програм</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Налаштування принтера</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Заміна комплектуючих.ОЗУ, конектор, матриця і т.д</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="services-item post-item">
+                                <div class="title"><span>Шумить та гріється комп'ютер? Чищення від пилу</span></div>
+                                <div class="price">
+                                    <span>від 150 грн</span>
+                                </div>
+                                <button type="button" class="btn">Замовити</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section banner" style="background-image: url('/images/about.jpg')">
+            <div class="about-section-description">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col_6 col_mob-12">
+                            <div class="wysiwyg">
+                                <h2>Про нас</h2>
+                                <p>Комп’ютерна Допомога - це команда  виїзних майстрів та сервіс інженерів з досвідом від 10 років.</p>
+                                <p>Для нас не існує проблем, які ми б не змогли вирішити, як на дому, так і в сервісному центрі. Саме завдяки професіоналізму нашої команди ми надаємо гарантію від 1-го до 5-ти років. Будь-яка модель, стара чи нова, може вам служити довше, та ремонт старої техніки завжди вигідніше, ніж купувати нову. Якщо це проблема з комп'ютерною технікою - звертайтеся саме до нас. Слава Україні!</p>
+                            </div>
+                        </div>
+                        <div class="col col_6 col_mob-12">
+                            <div class="about-image">
+                                <img src="/images/about-photo.jpg" alt="about-photo" title="about-photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section-list">
+                <div class="container">
+                    <div class="row post-list about-list">
+                        <div class="col col_3 col_desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="about-item post-item">
+                                <div class="image">
+                                    <img src="/images/about-1.jpg" alt="about-1" title="about-1">
+                                </div>
+                                <div class="wysiwyg">
+                                    <p>Знижка 10 % на перше звернення!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="about-item post-item">
+                                <div class="image">
+                                    <img src="/images/about-2.jpg" alt="about-2" title="about-2">
+                                </div>
+                                <div class="wysiwyg">
+                                    <p>Три точки прийому видачі у вашому місті</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="about-item post-item">
+                                <div class="image">
+                                    <img src="/images/about-3.jpg" alt="about-3" title="about-3">
+                                </div>
+
+                                <div class="wysiwyg">
+                                    <p>Виїзд майстра по місту та області</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="about-item post-item">
+                                <div class="image">
+                                    <img src="/images/about-4.jpg" alt="about-4" title="about-4">
+                                </div>
+                                <div class="wysiwyg">
+                                    <p>Гарантія від 1 до 5ти років!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="section team-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="title">Наша команда</h2>
+                </div>
+                <div class="section-container">
+                    <div class="row team-list post-list">
+                        <div class="col col_4 col_mob-6 col_mob-p-12">
+                            <div class="team-item post-item">
+                                <div class="image">
+                                    <img src="/images/team-1.jpg" alt="team-1" title="team-1">
+                                </div>
+                                <div class="team-info">
+                                    <div class="name"><span>Прізвище Ім’я</span></div>
+                                    <div class="position"><span>посада</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_4 col_mob-6 col_mob-p-12">
+                            <div class="team-item post-item">
+                                <div class="image">
+                                    <img src="/images/team-1.jpg" alt="team-1" title="team-1">
+                                </div>
+                                <div class="team-info">
+                                    <div class="name"><span>Прізвище Ім’я</span></div>
+                                    <div class="position"><span>посада</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_4 col_mob-6 col_mob-p-12">
+                            <div class="team-item post-item">
+                                <div class="image">
+                                    <img src="/images/team-1.jpg" alt="team-1" title="team-1">
+                                </div>
+                                <div class="team-info">
+                                    <div class="name"><span>Прізвище Ім’я</span></div>
+                                    <div class="position"><span>посада</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section banner" style="background-image: url('/images/work.jpg')">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="title">Етапи роботи</h2>
+                </div>
+                <div class="section-container">
+                    <div class="work-list post-list row">
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="work-item post-item">
+                                <span class="count"></span>
+                                <div class="wysiwyg">
+                                    <h5>Замовлення</h5>
+                                    <p>Дипломовані майстри з великим досвідом роботи!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="work-item post-item">
+                                <span class="count"></span>
+                                <div class="wysiwyg">
+                                    <h5>Діагностика</h5>
+                                    <p>У термін від 30 хвилин майстер приїжджає до вас та проводить діагностику</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="work-item post-item">
+                                <span class="count"></span>
+                                <div class="wysiwyg">
+                                    <h5>Прорахунок</h5>
+                                    <p>Якщо вас влаштовує вартість послуг, ми приступаємо до робіт</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-4 col_mob-6 col_mob-p-12">
+                            <div class="work-item post-item">
+                                <span class="count"></span>
+                                <div class="wysiwyg">
+                                    <h5>Справна техніка</h5>
+                                    <p>Після закінчення робіт ви отримуєте справну техніку та акт виконаних робіт</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-block text-center">
+                        <button type="button" class="btn">викликати майстра</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="section banner"  style="background-image: url('/images/reviews.jpg')">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="title">Відгуки наших клієнтів</h2>
+                </div>
+                <div class="section-container">
+                    <div class="row">
+                        <div class="col col_3 col_middle-desktop-2 col_mob-12"></div>
+                        <div class="col col_6 col_middle-desktop-8 col_mob-12">
+                            <div id="reviews-slider-1" class="reviews-slider">
+                                <div class="slider swiper">
+                                    <div class="swiper-wrapper slider-container">
+                                        <div class="swiper-slide slider-item reviews-slider-item">
+                                            <div class="wysiwyg text-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus ullamcorper pellentesque tempor dui viverra parturient. Est enim malesuad</p>
+                                                <span class="author">Lorem ipsum</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slider-item reviews-slider-item">
+                                            <div class="wysiwyg text-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus ullamcorper pellentesque tempor dui viverra parturient. Est enim malesuad</p>
+                                                <span class="author">Lorem ipsum</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-nav__container">
+                                    <div class="slider-nav">
+                                        <div class="slider-nav-btn slider-nav-btn-prev swiper-button-prev">
+                                            <svg class="icon" width="27" height="8" viewBox="0 0 27 8" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659726 4.53553 0.464464C4.34027 0.269202 4.02369 0.269202 3.82843 0.464464L0.646446 3.64644ZM27 3.5L1 3.5L1 4.5L27 4.5L27 3.5Z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="slider-nav-btn slider-nav-btn-next swiper-button-next">
+                                            <svg class="icon" width="27" height="8" viewBox="0 0 27 8" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.3536 4.35355C26.5488 4.15829 26.5488 3.84171 26.3536 3.64645L23.1716 0.464466C22.9763 0.269204 22.6597 0.269204 22.4645 0.464466C22.2692 0.659728 22.2692 0.976311 22.4645 1.17157L25.2929 4L22.4645 6.82843C22.2692 7.02369 22.2692 7.34027 22.4645 7.53553C22.6597 7.7308 22.9763 7.7308 23.1716 7.53553L26.3536 4.35355ZM0 4.5H26V3.5H0V4.5Z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col_3 col_middle-desktop-2 col_mob-12"></div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main><!-- //middle -->
-    <footer id="footer" class="site-footer">
-    <div class="container">
+    <footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col col_4 col_middle-desktop-12">
+                    <div class="logo">
+                        <a href="index.html" class="logo__link">
+                            <span>КОМП’ЮТЕРНА</span> ДОПОМОГА
+                        </a>
+                    </div>
+                </div>
+                <div class="col col_6 col_middle-desktop-12">
+                    <div class="footer-info">
+                        <div class="contact-info">
+                            <ul>
+                                <li>Адреса</li>
+                                <li>
+                                    <a href="tel:380000000000">Номер телефону</a>
+                                </li>
+                                <li>
+                                    <span class="icon email">
+                                        <img src="/images/icon-email.png" alt="icon-email" title="icon-email">
+                                    </span>
+                                    <a href="mailto:pchelpkiev@etlgr.com">pchelpkiev@etlgr.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col_2 col_middle-desktop-12">
+                    <div class="soc">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="/images/fb.png" alt="fb" title="fb">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="/images/insta.png" alt="insta" title="insta">
+                                </a>
+                            </li>
 
-    </div><!-- //container -->
-</footer><!-- //footer -->
-    <div class="back-to top">
-    <button class="btn back-to__btn">
-        <svg class="icon" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0001 6.66145L26.2475 12.6585L27.7527 11.3415L20.7527 3.3415C20.5628 3.12448 20.2885 3 20.0001 3C19.7117 3 19.4374 3.12448 19.2475 3.3415L12.2475 11.3415L13.7527 12.6585L19.0001 6.66145L19.0001 36L21.0001 36L21.0001 6.66145Z" fill-opacity="0.6"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <span class="copyright">2023, All rights reserved | Made by OniStudio</span>
+        </div>
+    </div>
+</footer>
+    <div class="popup-wrap">
+        <div class="popup popup-tiny location-popup">
+    <button type="button" class="btn icon-block btn-icon popup-remove">
+        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1265 18.1872C17.4194 18.4801 17.8943 18.4801 18.1872 18.1872C18.4801 17.8943 18.4801 17.4194 18.1872 17.1265L13.0607 12L18.1872 6.87347C18.4801 6.58058 18.4801 6.10571 18.1872 5.81281C17.8943 5.51992 17.4194 5.51992 17.1265 5.81281L12 10.9393L6.87347 5.81281C6.58058 5.51992 6.10571 5.51992 5.81281 5.81281C5.51992 6.1057 5.51992 6.58058 5.81281 6.87347L10.9393 12L5.81281 17.1265C5.51992 17.4194 5.51992 17.8943 5.81281 18.1872C6.10571 18.4801 6.58058 18.4801 6.87347 18.1872L12 13.0607L17.1265 18.1872Z"/>
         </svg>
     </button>
-</div>
-    <div class="popup-wrap">
-        <div class="popup location-popup">
-    <div class="popup-header">
-        <div class="popup-header__title">
-            <h2 class="h3">Текстовый заголовок</h2>
-        </div>
-        <button type="button" class="btn btn_secondary icon-block btn-icon popup-remove">
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1265 18.1872C17.4194 18.4801 17.8943 18.4801 18.1872 18.1872C18.4801 17.8943 18.4801 17.4194 18.1872 17.1265L13.0607 12L18.1872 6.87347C18.4801 6.58058 18.4801 6.10571 18.1872 5.81281C17.8943 5.51992 17.4194 5.51992 17.1265 5.81281L12 10.9393L6.87347 5.81281C6.58058 5.51992 6.10571 5.51992 5.81281 5.81281C5.51992 6.1057 5.51992 6.58058 5.81281 6.87347L10.9393 12L5.81281 17.1265C5.51992 17.4194 5.51992 17.8943 5.81281 18.1872C6.10571 18.4801 6.58058 18.4801 6.87347 18.1872L12 13.0607L17.1265 18.1872Z"/>
-            </svg>
-        </button>
-    </div><!-- //popup-header -->
     <div class="popup-content">
-        <div class="wysiwyg">
-            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
-            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
-            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
-            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
-            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
-            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
-
-            <p>Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа систем массового участия.</p>
-            <p>Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
-            <p>Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке модели развития. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
-            <p>Равным образом рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
-            <p>Не следует, однако забывать, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
-            <p>Товарищи! реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+        <div class="wysiwyg text-center">
+            <h4>Безкоштовна консультація</h4>
+            <p>Заповніть форму для консультації зі спеціалістом</p>
         </div>
+        <form action="post" class="form" id="form-1">
+            <fieldset>
+                <div class="row">
+                    <div class="col col_12">
+                        <div class="form-field">
+                            <label class="label-wrap">
+                                <input
+                                        type="text"
+                                        placeholder="Ім’я"
+                                        class="form-input form-control"
+                                        name="user-name"
+                                        id="user-name"
+                                        required
+                                />
+                            </label>
+                        </div><!-- //form-field -->
+                    </div>
+                    <div class="col col_12">
+                        <div class="form-field">
+                            <label class="label-wrap">
+                                <input
+                                        type="text"
+                                        placeholder="Номер телефону"
+                                        class="form-input form-control phone_mask"
+                                        name="tel-1"
+                                        id="tel-1"
+                                        required
+                                />
+                            </label>
+                        </div><!-- //form-field -->
+                    </div>
+                    <div class="col col_12">
+                        <div class="form-field">
+                            <label class="label-wrap">
+                                <textarea name="" placeholder="Опишіть Вашу проблему"></textarea>
+                            </label>
+                        </div><!-- //form-field -->
+                    </div>
+                    <div class="col col_12">
+                        <button type="submit" class="btn">Відправити</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    <div class="popup-footer">
-        <button type="button" class="btn btn_secondary popup-remove margin-left-auto">
-            закрыть
-        </button>
-    </div>
+
 </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><!-- jQuery -->

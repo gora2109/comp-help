@@ -1,3 +1,48 @@
 //FOOTER
-.site-footer
+.footer
+  background-color: #110B05
   margin-top: auto
+  &-top
+    padding: 56px 0
+    @include mediaMaxWidthDesktop
+      padding: 40px 0
+  &-bottom
+    border-top: 1px solid #151515
+    padding: 27px 0
+  .copyright
+    font-size: $mainFontSize - 4
+    line-height: $mainLineHeight - 5
+    color: #545454
+  .soc
+    ul
+      justify-content: flex-end
+  .contact
+    &-info
+      ul
+        list-style-type: none
+        margin: 0
+        display: flex
+        justify-content: space-around
+        li
+          display: flex
+          align-items: center
+          padding: 10px
+          .icon
+            width: 18px
+            height: 18px
+            margin-right: 6px
+  @include mediaMaxWidthDesktop
+    .logo
+      text-align: center
+      margin-bottom: 10px
+    .contact
+      &-info
+        ul
+          flex-direction: column
+          align-items: center
+          li
+            margin-bottom: 10px
+
+    .soc
+      ul
+        justify-content: center

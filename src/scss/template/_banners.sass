@@ -1,0 +1,15 @@
+.top-banner
+  .wysiwyg
+    & > *
+      &:not(:last-child)
+        margin-bottom: 20px
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6
+      margin-bottom: 35px !important
+    @include mediaMaxWidthTabMobile
+      & > *
+        &:not(:last-child)
+          margin-bottom: 10px
+      h1, h2, h3, h4, h5, h6,
+      .h1, .h2, .h3, .h4, .h5, .h6
+        margin-bottom: 22px !important

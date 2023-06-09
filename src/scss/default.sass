@@ -28,11 +28,12 @@ body
   min-height: 100%
 
 body
-  color: $colorPrimary
+  color: $colorTertiary
   font-size: $mainFontSize
   line-height: $mainLineHeight
   font-family: $mainFont
   font-weight: $mainFontWeigth
+  background-color: #110B05
   -webkit-font-smoothing: antialiased
 
 .wrapper
@@ -42,41 +43,59 @@ body
   overflow: hidden
   overflow-y: auto
   justify-content: flex-start
-  opacity: 0.1
-  @include transition-long
-  &.wrapper_ready-load
-    opacity: 1
 
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
   margin: 0 0 24px
-  font-weight: $mainFontWeigth + 200
-  color: $colorPrimaryDark
+  font-weight: $mainFontWeigth + 300
+  color: $colorTertiary
 
 h1,
 .h1
-  font-size: 40px
-  line-height: 48px
+  font-size: 56px
+  line-height: 66px
+  @include desktop
+    font-size: 42px
+    line-height: 49px
+  @include mediaMaxWidthDesktop
+    font-size: 30px
+    line-height: 35px
 
 h2,
 .h2
-  font-size: 28px
-  line-height: 36px
+  font-size: 42px
+  line-height: 49px
+  @include desktop
+    font-size: 30px
+    line-height: 35px
+  @include mediaMaxWidthDesktop
+    font-size: 24px
+    line-height: 28px
 
 h3,
 .h3
-  font-size: 24px
-  line-height: 36px
+  font-size: 30px
+  line-height: 35px
+  @include desktop
+    font-size: 24px
+    line-height: 28px
+  @include mediaMaxWidthDesktop
+    font-size: 18px
+    line-height: 21px
 
 h4,
 .h4
-  font-size: 20px
+  font-size: 24px
   line-height: 28px
+  @include mediaMaxWidthDesktop
+    font-size: 18px
+    line-height: 21px
 
 h5,
 .h5
-  font-size: 16px
-  line-height: 24px
+  font-size: 18px
+  line-height: 21px
 
 h6,
 .h6
@@ -90,16 +109,18 @@ h4 a,
 h5 a,
 h6 a
   text-decoration: none
-  color: $colorPrimary
+  color: $colorTertiary
   &:hover
     text-decoration: underline
 strong
-  font-weight: $mainFontWeigth + 200
+  font-weight: $mainFontWeigth + 300
+
 a
-  text-decoration: underline
-  color: $colorPrimary
+  text-decoration: none
+  color: $colorTertiary
+  @include transition
   &:hover
-    text-decoration: none
+    color: $colorSecondary
 
 ul, p, ol
   padding: 0

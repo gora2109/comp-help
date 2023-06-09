@@ -1,0 +1,154 @@
+.post
+  &-list
+    .post
+      &-item
+        overflow: hidden
+        border-radius: 30px
+        position: relative
+        z-index: 2
+        margin-bottom: 20px
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          z-index: -1
+          background-color: rgba(255, 255, 255, .2)
+          backdrop-filter: blur(10px)
+.services
+  &-list
+    .services
+      &-item
+        padding: 94px 34px 49px
+        text-align: center
+        min-height: 150px
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        & > *
+          &:not(:last-child)
+            margin-bottom: 20px
+        .title
+          height: 100%
+        .price
+          font-size: $mainFontSize + 6
+          line-height: $mainLineHeight + 7
+          font-weight: $mainFontWeigth + 200
+          color: $colorSecondary
+          margin-bottom: 45px
+        @include hd-desktop
+          padding: 60px 25px 35px
+          .price
+            margin-bottom: 35px
+        @include mediaMaxWidthDesktop
+          padding: 35px 15px
+          & > *
+            &:not(:last-child)
+              margin-bottom: 10px
+          .price
+            margin-bottom: 15px
+.team
+  &-list
+    position: relative
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      background-color: $colorSecondary
+      height: 50%
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
+    &:before
+      left: calc(-50vw + 1480px/2)
+    &:after
+      right: calc(-50vw + 1480px/2)
+    @include hd-desktop
+      &:before
+        left: calc(-50vw + 1168px/2)
+      &:after
+        right: calc(-50vw + 1168px/2)
+    @include desktop
+      &:before
+        left: calc(-50vw + 1024px/2)
+      &:after
+        right: calc(-50vw + 1024px/2)
+    @include mediaMaxWidthDesktop
+      &:before
+        left: calc(-50vw + 95%/2)
+      &:after
+        right: calc(-50vw + 95%/2)
+    .team
+      &-item
+        border-radius: 10px !important
+        box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25)
+        &:before
+          display: none
+        .image
+          img
+            display: block
+            width: 100%
+      &-info
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        padding: 18px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        text-align: center
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 76.26%, rgba(255, 255, 255, 0.81) 91.41%)
+        .name
+          text-transform: uppercase
+          font-weight: $mainFontWeigth + 200
+          color: $colorPrimary
+        .position
+          color: #737373
+          font-weight: $mainFontWeigth + 200
+.work-list
+  display: flex
+  justify-content: center
+  align-self: stretch
+  flex-wrap: wrap
+  counter-reset: count1
+  height: 100%
+  & + *
+    margin-top: 60px
+    @include desktop
+      margin-top: 40px
+    @include mediaMaxWidthDesktop
+      margin-top: 20px
+    @include mediaMaxWidthTablet
+      margin-top: 10px
+  .work
+    &-item
+      width: 100%
+      padding: 64px 25px
+      display: flex
+      align-items: flex-start
+      height: 100%
+      .count
+        display: flex
+        align-items: center
+        margin-right: 10px
+        &:before
+          content: counter(count1)
+          counter-increment: count1
+          font-weight: $mainFontWeigth + 300
+          font-size: 115px
+          line-height: 115px
+          color: $colorSecondary
+          position: relative
+          font-variant-numeric: lining-nums
+      .wysiwyg
+        & > *
+          &:not(:last-child)
+            margin-bottom: 10px
+        h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6
+          font-weight: $mainFontWeigth + 200

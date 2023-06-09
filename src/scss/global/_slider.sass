@@ -1,5 +1,5 @@
-$slider-nav-color: $colorTertiaryLight
-$slider-nav-color-active: $colorSecondaryLight
+$slider-nav-color: $colorPrimaryDark
+$slider-nav-color-active: $colorTertiary
 .slider
   width: 100%
   &-container
@@ -15,23 +15,32 @@ $slider-nav-color-active: $colorSecondaryLight
           img
             height: 100%
   &-nav
+    display: flex
+    align-items: center
+    justify-content: center
     &__container
     &-btn
-      width: 32px
-      height: 32px
-      top: calc(50% - 16px)
+      position: static
+      width: 56px
+      height: 56px
+      top: 0
       margin-top: 0
+      background-color: $colorSecondary
+      border-radius: 50%
+      @include transition
+      margin: 0 10px
       .icon
-        width: 32px
-        height: 32px
+        width: 27px
+        height: 8px
         fill: $slider-nav-color
         @include transition
       &:after
         display: none
       &:hover
+        background-color: $colorPrimary
         .icon
           fill: $slider-nav-color-active
       &-next
-        right: 32px
+        right: 0
       &-prev
-        left: 32px
+        left: 0

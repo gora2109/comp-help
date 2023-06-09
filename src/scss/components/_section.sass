@@ -1,18 +1,67 @@
 //SECTIONS
 .section
-  padding: 64px 0
-  &.docSlider-page
-    overflow-x: hidden
-    display: flex
-    flex-direction: column
-    & > *
-      margin-top: auto
-      margin-bottom: auto
+  padding: 150px 0
   &-top-0
     padding-top: 0 !important
   &-bottom-0
     padding-bottom: 0 !important
-  @include mediaMaxWidthTablet
-    padding: 48px 0 16px
+  @include desktop
+    padding: 100px 0
+  @include mediaMaxWidthDesktop
+    padding: 80px 0
+  @include mediaMaxWidthTabMobile
+    padding: 60px 0
+  &-title
+    margin-bottom: 62px
+    text-align: center
+    .title
+      margin-bottom: 0
+    @include mediaMaxWidthDesktop
+      margin-bottom: 42px
+    @include mediaMaxWidthTabMobile
+      margin-bottom: 22px
   &.section_secondary-bg
     background-color: $colorPrimaryLight
+  &.section-dark
+    color: $colorPrimaryDark
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6
+      color: $colorPrimaryDark
+  &#about
+    padding-bottom: calc(25% + 250px)
+    @include desktop
+      padding-bottom: calc(25% + 200px)
+    @include mediaMaxWidthDesktop
+      padding-bottom: calc(25% + 170px)
+    @include mediaMaxWidthTabMobile
+      padding-bottom: calc(25% + 160px)
+    & + #team
+      margin: 150px 0
+      padding: 0
+      @include desktop
+        margin: 100px 0
+      @include mediaMaxWidthDesktop
+        margin: 80px 0
+      @include mediaMaxWidthTabMobile
+        margin: 60px 0
+      & + .section
+        padding-top: calc(25% - 150px)
+        @include desktop
+          padding-top: calc(25% - 100px)
+        @include mediaMaxWidthDesktop
+          padding-top: calc(25% - 80px)
+        @include mediaMaxWidthTabMobile
+          padding-top: calc(25% - 60px)
+      //height: 352px
+      .container
+        transform: translateY(-25%)
+        margin-top: calc(-25% - 100px)
+        margin-bottom: calc(-25% - 100px)
+        @include mediaMaxWidthTabMobile
+          transform: translateY(-15%)
+          margin-top: calc(-15% - 100px)
+          margin-bottom: calc(-15% - 100px)
+        @include mediaMaxWidthMobile
+          transform: translateY(0)
+          margin-top: -60px
+          margin-bottom: -60px
