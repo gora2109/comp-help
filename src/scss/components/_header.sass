@@ -34,7 +34,7 @@ $headerNavColorHover: $colorSecondary
       position: fixed
       left: 0
       right: 0
-      top: 70px
+      top: 72px
       bottom: 100%
       overflow: hidden
       visibility: hidden
@@ -42,7 +42,7 @@ $headerNavColorHover: $colorSecondary
       overflow-y: auto
       width: 100%
       @include transition
-      @include mediaMaxWidthDesktop
+      @include mediaMinWidthTabMobile
         top: 80px
       &:before
         content: ''
@@ -63,20 +63,26 @@ $headerNavColorHover: $colorSecondary
       margin: 0 -32px
       @include mediaMaxWidthDesktop
         margin: 0 -8px
+      @include mediaMaxWidthTabMobile
+        margin: 0 -4px
     &__block
       padding: 0 32px
       @include mediaMaxWidthDesktop
         padding: 0 8px
+      @include mediaMaxWidthTabMobile
+        padding: 0 4px
       .btn
-        @include mediaMinWidthTabMobile
+        @include mediaMinWidthDesktop
           .fa
             display: none
-        @include mediaMaxWidthTabMobile
+        @include mediaMaxWidthDesktop
           padding: 8px 12px
           border-radius: 50%
           span
             display: none
-    @include mediaMaxWidthDesktop
+        @include mediaMaxWidthTabMobile
+          font-size: $mainFontSize - 4
+
   &.active
     .nav-toggle
       &__link
@@ -121,7 +127,9 @@ $headerNavColorHover: $colorSecondary
     @include desktop
       font-size: $mainFontSize + 6
       line-height: $mainLineHeight + 7
-
+    @include mediaMaxWidthTabMobile
+      font-size: $mainFontSize + 2
+      line-height: $mainLineHeight + 3
 // Вызов мобильного меню
 .nav-toggle
   display: flex

@@ -28,13 +28,15 @@
     .h1, .h2, .h3, .h4, .h5, .h6
       color: $colorPrimaryDark
   &#about
-    padding-bottom: calc(25% + 250px)
+    padding-bottom: calc(25% + 180px)
     @include desktop
-      padding-bottom: calc(25% + 200px)
+      padding-bottom: calc(25% + 150px)
     @include mediaMaxWidthDesktop
-      padding-bottom: calc(25% + 170px)
+      padding-bottom: calc(25% + 150px)
     @include mediaMaxWidthTabMobile
-      padding-bottom: calc(25% + 160px)
+      padding-bottom: calc(25% + 150px)
+    @include mediaMaxWidthMobile
+      padding-bottom: 60px
     & + #team
       margin: 150px 0
       padding: 0
